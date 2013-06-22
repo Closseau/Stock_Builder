@@ -94,6 +94,26 @@ public class MousePreformer implements MouseListener
 		{
 			MyFrame.one.setOpticMount(0);
 		}
+		else if (e.getSource() == Menu.magazine5RD)
+		{
+			MyFrame.one.setMagazine(1);
+		}
+		else if (e.getSource() == Menu.magazine10RD)
+		{
+			MyFrame.one.setMagazine(2);
+		}
+		else if (e.getSource() == Menu.magazine20RD)
+		{
+			MyFrame.one.setMagazine(3);
+		}
+		else if (e.getSource() == Menu.magazineNone)
+		{
+			MyFrame.one.setMagazine(0);
+		}
+		else if (e.getSource() == Menu.opticMountNone)
+		{
+			
+		}
 		
 		MyFrame.RePaint();
 	}
@@ -175,6 +195,26 @@ public class MousePreformer implements MouseListener
 		else if (e.getSource() == Menu.opticMountNone)
 		{
 			MyFrame.one.setOpticMount(Menu.opticMount[5]);
+		}
+		else if (e.getSource() == Menu.magazine5RD)
+		{
+			MyFrame.one.setMagazine(Menu.magazine[5]);
+		}
+		else if (e.getSource() == Menu.magazine10RD)
+		{
+			MyFrame.one.setMagazine(Menu.magazine[5]);
+		}
+		else if (e.getSource() == Menu.magazine20RD)
+		{
+			MyFrame.one.setMagazine(Menu.magazine[5]);
+		}
+		else if (e.getSource() == Menu.magazineNone)
+		{
+			MyFrame.one.setMagazine(Menu.magazine[5]);
+		}
+		else if (e.getSource() == Menu.opticMountNone)
+		{
+			
 		}
 		MyFrame.RePaint();
 	}

@@ -2441,8 +2441,9 @@ public class Menu
 		{
 			if (myImageType == 1)
 			{
-				menuItem = new JMenuItem("5 RD");
-				menuItem.addMouseListener(new MouseListener()
+				magazine5RD = new JMenuItem("5 RD");
+				magazine5RD.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2464,7 +2465,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				magazine5RD.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2486,11 +2489,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return magazine5RD;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("10 RD");
-				menuItem.addMouseListener(new MouseListener()
+				magazine10RD = new JMenuItem("10 RD");
+				magazine10RD.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2512,7 +2518,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				magazine10RD.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2533,11 +2541,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return magazine10RD;
 			}
 			else if (myImageType == 3)
 			{
-				menuItem = new JMenuItem("15 RD");
-				menuItem.addMouseListener(new MouseListener()
+				magazine20RD = new JMenuItem("20 RD");
+				magazine20RD.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2559,7 +2570,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				magazine20RD.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2580,11 +2593,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return magazine20RD;
 			}
 			else
 			{
-				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(new MouseListener()
+				magazineNone = new JMenuItem("None");
+				magazineNone.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2606,7 +2622,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				magazineNone.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2627,6 +2645,8 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return magazineNone;
 			}
 		}
 		else if (myImageArrayType == 7)

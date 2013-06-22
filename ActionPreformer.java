@@ -297,8 +297,67 @@ public class ActionPreformer implements ActionListener
 				Menu.done[4] = true;
 			}
 		}
-		
-		
+		else if (e.getSource() == Menu.magazine5RD)
+		{
+			// sets the Magazine image to "5 RD"
+			MyFrame.one.setMagazine(1);
+			Menu.magazineMenu.setForeground(new Color(0, 100, 0));
+			Menu.magazine[5] = 1;
+			Menu.magazineReminder.setText("Magazine: 5 RD($50)");
+			Menu.magazineCost = 50;
+			if (Menu.done[5] == false)
+			{
+				Menu.addM14Bipod();
+				Menu.done[5] = true;
+			}
+		}
+		else if (e.getSource() == Menu.magazine10RD)
+		{
+			// sets the Magazine image to "10 RD"
+			MyFrame.one.setMagazine(2);
+			Menu.magazineMenu.setForeground(new Color(0, 100, 0));
+			Menu.magazine[5] = 2;
+			Menu.magazineReminder.setText("Magazine: 10 RD($100)");
+			Menu.magazineCost = 100;
+			if (Menu.done[5] == false)
+			{
+				Menu.addM14Bipod();
+				Menu.done[5] = true;
+			}
+		}
+		else if (e.getSource() == Menu.magazine20RD)
+		{
+			 // sets the Magazine image to "15 RD"
+			MyFrame.one.setMagazine(3);
+			Menu.magazineMenu.setForeground(new Color(0, 100, 0));
+			Menu.magazine[5] = 3;
+			Menu.magazineReminder.setText("Magazine: 15 RD($150)");
+			Menu.magazineCost = 150;
+			if (Menu.done[5] == false)
+			{
+				Menu.addM14Bipod();
+				Menu.done[5] = true;
+			}
+		}
+		else if (e.getSource() == Menu.magazineNone)
+		{
+			// sets the Magazine image to "15 RD"
+			MyFrame.one.setMagazine(0);
+			Menu.magazineMenu.setForeground(new Color(100, 0, 0));
+			// repaints the Jframe
+			Menu.magazine[5] = 0;
+			Menu.magazineReminder.setText("Magazine: None");
+			Menu.magazineCost = 0;
+			if (Menu.done[5] == false)
+			{
+				Menu.addM14Bipod();
+				Menu.done[5] = true;
+			}
+		}
+		else if (e.getSource() == Menu.opticMountNone)
+		{
+			
+		}
 		System.out.println(e.getActionCommand());
 		System.out.println(e.getModifiers());
 		System.out.println(e.getWhen());
