@@ -13,11 +13,14 @@ import javax.swing.JMenuItem;
 public class Menu 
 {
 	public static final int NumberSaveFiles = 5;
-	public boolean[] done = new boolean[10];
-	public JMenu menu, submenu, submenu2, submenu3;
+	public static boolean[] done = new boolean[10];
+	public static JMenu menu, submenu, submenu2, submenu3;
 	public static JMenu actionTypeMenu, barrelLenghtMenu, opticsMenu, opticMountMenu, magazineMenu, bipodMenu, monopodMenu, chassisColorMenu, gripColorMenu;
-	public JMenuItem menuItem;
-	public JMenuBar menuBar = new JMenuBar();
+	public static JMenuItem menuItem, actionTypeStandard, actionTypeRearLug, actionTypeM25, actionTypeNone, barrelLenght16Inch, barrelLenght18Inch, barrelLenght20Inch, barrelLenghtNone, opticsScope, opticsReflexSight, opticsNone, opticMountBrooksStyle, opticMountBarrelMountedPicatinny
+	, opticMountM25, opticMountSocomShort, opticMountSocomExtended, opticMountNone, magazine5RD, magazine10RD, magazine20RD, magazineNone,bipodHarris, bipodGGG, bipodAtlas, bipodNone, monopodBT, monopodNone, chassisColorBallisticWhite
+	, chassisColorGritTan, chassisColorCoyoteBrown, chassisColorDarkEarth, chassisColorOliveDrab, chassisColorLowLightGreen, chassisColorTitaniumGrey, chassisColorSwatBlack, chassisColorGIBrown, chassisColorNone
+	, gripColorBallisticWhite, gripColorGritTan, gripColorCoyoteBrown, gripColorDarkEarth, gripColorOliveDrab, gripColorLowLightGreen, gripColorTitaniumGrey, gripColorSwatBlack, gripColorGIBrown, gripColorNone, rifleTypeM14, rifleTypeRem700;
+	public static JMenuBar menuBar = new JMenuBar();
 	public static JLabel actionTypeReminder = new JLabel("", JLabel.LEADING);
 	public static JLabel barrelLenghtReminder = new JLabel("", JLabel.LEADING);
 	public static JLabel opticReminder = new JLabel("", JLabel.LEADING);
@@ -38,17 +41,19 @@ public class Menu
 	public static int monopodCost = 0;
 	public static int chassisColorCost = 0;
 	public static int gripColorCost = 0;
-	public int[] rifleType = new int[NumberSaveFiles + 1];
-	public int[] actionType = new int[NumberSaveFiles + 1];
-	public int[] barrelLenght = new int[NumberSaveFiles + 1];
-	public int[] optics = new int[NumberSaveFiles + 1];
-	public int[] opticMount = new int[NumberSaveFiles + 1];
-	public int[] magazine = new int[NumberSaveFiles + 1];
-	public int[] bipod = new int[NumberSaveFiles + 1];
-	public int[] monopod = new int[NumberSaveFiles + 1];
-	public int[] chassisColor = new int[NumberSaveFiles + 1];
-	public int[] gripColor = new int[NumberSaveFiles + 1];
+	public static int[] rifleType = new int[NumberSaveFiles + 1];
+	public static int[] actionType = new int[NumberSaveFiles + 1];
+	public static int[] barrelLenght = new int[NumberSaveFiles + 1];
+	public static int[] optics = new int[NumberSaveFiles + 1];
+	public static int[] opticMount = new int[NumberSaveFiles + 1];
+	public static int[] magazine = new int[NumberSaveFiles + 1];
+	public static int[] bipod = new int[NumberSaveFiles + 1];
+	public static int[] monopod = new int[NumberSaveFiles + 1];
+	public static int[] chassisColor = new int[NumberSaveFiles + 1];
+	public static int[] gripColor = new int[NumberSaveFiles + 1];
 	public static BufferedImage Stock;
+	public static ActionPreformer ALisener = new ActionPreformer();
+	public static MousePreformer MLisener = new MousePreformer();
 	public Menu()
 	{	
 		int i;
@@ -206,7 +211,7 @@ public class Menu
 
 		//addMenuItems();
 	}
-	private void addM14ActionType()
+	public static void addM14ActionType()
 	{
 		actionTypeMenu = new JMenu("2. Action Type");
 		actionTypeMenu.setToolTipText("Choose Your actions type for your stock here");
@@ -241,7 +246,7 @@ public class Menu
 		
 		MyFrame.RePaint();
 	}
-	private void addM14BarrelLenght()
+	public static void addM14BarrelLenght()
 	{
 		barrelLenghtMenu = new JMenu("3. Barrel Length");
 		barrelLenghtMenu.setMnemonic(KeyEvent.VK_M);
@@ -274,7 +279,7 @@ public class Menu
 		menuBar.add(barrelLenghtMenu);
 		MyFrame.RePaint();
 	}
-	private void addM14Optics()
+	public static void addM14Optics()
 	{
 		opticsMenu = new JMenu("4. Optics");
 		opticsMenu.setMnemonic(KeyEvent.VK_M);
@@ -306,7 +311,7 @@ public class Menu
 		menuBar.add(opticsMenu);
 		MyFrame.RePaint();
 	}
-	private void addM14OpticMount()
+	public static void addM14OpticMount()
 	{
 		opticMountMenu = new JMenu("5. OpticMount");
 		opticMountMenu.setMnemonic(KeyEvent.VK_M);
@@ -341,7 +346,7 @@ public class Menu
 		menuBar.add(opticMountMenu);
 		MyFrame.RePaint();
 	}
-	private void addM14Magazine()
+	public static void addM14Magazine()
 	{
 		magazineMenu = new JMenu("6. Magazine");
 		magazineMenu.setMnemonic(KeyEvent.VK_M);
@@ -373,7 +378,7 @@ public class Menu
 		menuBar.add(magazineMenu);
 		MyFrame.RePaint();
 	}
-	private void addM14Bipod()
+	public static void addM14Bipod()
 	{
 		bipodMenu = new JMenu("7. Bipod");
 		bipodMenu.setMnemonic(KeyEvent.VK_M);
@@ -406,7 +411,7 @@ public class Menu
 		menuBar.add(bipodMenu);
 		MyFrame.RePaint();
 	}
-	private void addM14Monopod()
+	public static void addM14Monopod()
 	{
 		monopodMenu = new JMenu("8. Monopod");
 		monopodMenu.setMnemonic(KeyEvent.VK_M);
@@ -437,7 +442,7 @@ public class Menu
 		menuBar.add(monopodMenu);
 		MyFrame.RePaint();
 	}
-	private void addM14ChassisColor()
+	public static void addM14ChassisColor()
 	{
 		chassisColorMenu = new JMenu("9. Chassis Color");
 		chassisColorMenu.setMnemonic(KeyEvent.VK_M);
@@ -475,7 +480,7 @@ public class Menu
 		menuBar.add(chassisColorMenu);
 		MyFrame.RePaint();
 	}
-	private void addM14GripColor()
+	public static void addM14GripColor()
 	{
 		gripColorMenu = new JMenu("10. Grip Color");
 		gripColorMenu.setMnemonic(KeyEvent.VK_M);
@@ -521,7 +526,7 @@ public class Menu
 	{
 		return menuBar;
 	}  
-	public JMenuItem addNewMenuItem(int myImageArrayType, int myImageType, int myExtendedMenus)
+	public static JMenuItem addNewMenuItem(int myImageArrayType, int myImageType, int myExtendedMenus)
 	{
 		
 		if (myImageArrayType == 1)
@@ -529,9 +534,10 @@ public class Menu
 			if (myImageType == 1)
 			{
 				
-				menuItem = new JMenuItem("M-14");
-				menuItem.setToolTipText("<html>Great for shooting...;<br>" + " Cost: $50");
-				menuItem.addActionListener(new ActionListener() 
+				rifleTypeM14 = new JMenuItem("M-14");
+				rifleTypeM14.setToolTipText("<html>Great for shooting...;<br>" + " Cost: $50");
+				rifleTypeM14.addActionListener(ALisener);
+/*				
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -549,12 +555,14 @@ public class Menu
 						
 					}
 				});
+*/			return rifleTypeM14;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("REM 700");
-				menuItem.setToolTipText("<html>better quality than the M-14 series for some reson;<br>" + " Cost: $100");
-				menuItem.addActionListener(new ActionListener() 
+				rifleTypeRem700 = new JMenuItem("REM 700");
+				rifleTypeRem700.setToolTipText("<html>better quality than the M-14 series for some reson;<br>" + " Cost: $100");
+				rifleTypeRem700.addActionListener(ALisener);
+/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -571,6 +579,7 @@ public class Menu
 						}
 					}
 				});
+*/			return rifleTypeRem700;
 			}
 			else if (myImageType == 3)
 			{
@@ -1538,8 +1547,9 @@ public class Menu
 		{
 			if (myImageType == 1)
 			{
-				menuItem = new JMenuItem("Standard");
-				menuItem.addMouseListener(new MouseListener()
+				actionTypeStandard = new JMenuItem("Standard");
+				actionTypeStandard.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1561,7 +1571,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				actionTypeStandard.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1582,11 +1594,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return actionTypeStandard;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("Rear Lug");
-				menuItem.addMouseListener(new MouseListener()
+				actionTypeRearLug = new JMenuItem("Rear Lug");
+				actionTypeRearLug.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1608,7 +1623,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				actionTypeRearLug.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1629,11 +1646,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return actionTypeRearLug;
 			}
 			else if (myImageType == 3)
 			{
-				menuItem = new JMenuItem("M-25");
-				menuItem.addMouseListener(new MouseListener()
+				actionTypeM25 = new JMenuItem("M-25");
+				actionTypeM25.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1655,7 +1675,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				actionTypeM25.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1676,11 +1698,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return actionTypeM25;
 			}
 			else 
 			{
-				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(new MouseListener()
+				actionTypeNone = new JMenuItem("None");
+				actionTypeNone.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1702,7 +1727,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				actionTypeNone.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1723,14 +1750,17 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return actionTypeNone;
 			}
 		}
 		else if (myImageArrayType == 3)
 		{
 			if (myImageType == 1)
 			{
-				menuItem = new JMenuItem("16 Inch");
-				menuItem.addMouseListener(new MouseListener()
+				barrelLenght16Inch = new JMenuItem("16 Inch");
+				barrelLenght16Inch.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1752,7 +1782,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				barrelLenght16Inch.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1773,11 +1805,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return barrelLenght16Inch;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("18 Inch");
-				menuItem.addMouseListener(new MouseListener()
+				barrelLenght18Inch = new JMenuItem("18 Inch");
+				barrelLenght18Inch.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1799,7 +1834,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				barrelLenght18Inch.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1819,11 +1856,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return barrelLenght18Inch;
 			}
 			else if (myImageType == 3)
 			{
-				menuItem = new JMenuItem("20 Inch");
-				menuItem.addMouseListener(new MouseListener()
+				barrelLenght20Inch = new JMenuItem("20 Inch");
+				barrelLenght20Inch.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1845,7 +1885,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				barrelLenght20Inch.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1865,11 +1907,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return barrelLenght20Inch;
 			}
 			else
 			{
-				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(new MouseListener()
+				barrelLenghtNone = new JMenuItem("None");
+				barrelLenghtNone.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1891,7 +1936,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				barrelLenghtNone.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1911,14 +1958,17 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return barrelLenghtNone;
 			}
 		}
 		else if (myImageArrayType == 4)
 		{
 			if (myImageType == 1)
 			{
-				menuItem = new JMenuItem("Scope");
-				menuItem.addMouseListener(new MouseListener()
+				opticsScope = new JMenuItem("Scope");
+				opticsScope.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1940,7 +1990,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticsScope.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1962,11 +2014,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return opticsScope;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("Reflex Sight");
-				menuItem.addMouseListener(new MouseListener()
+				opticsReflexSight = new JMenuItem("Reflex Sight");
+				opticsReflexSight.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -1988,7 +2043,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticsReflexSight.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2009,11 +2066,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return opticsReflexSight;
 			}
 			else 
 			{
-				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(new MouseListener()
+				opticsNone = new JMenuItem("None");
+				opticsNone.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2035,7 +2095,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticsNone.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2056,14 +2118,17 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return opticsNone;
 			}
 		}
 		else if (myImageArrayType == 5)
 		{
 			if (myImageType == 1)
 			{
-				menuItem = new JMenuItem("Brooks Style");
-				menuItem.addMouseListener(new MouseListener()
+				opticMountBrooksStyle = new JMenuItem("Brooks Style");
+				opticMountBrooksStyle.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2085,7 +2150,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticMountBrooksStyle.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2107,11 +2174,14 @@ public class Menu
 						
 					}
 				});
+				*/
+				return opticMountBrooksStyle;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("Barrel Mounted Picatinny");
-				menuItem.addMouseListener(new MouseListener()
+				opticMountBarrelMountedPicatinny = new JMenuItem("Barrel Mounted Picatinny");
+				opticMountBarrelMountedPicatinny.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2133,7 +2203,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticMountBarrelMountedPicatinny.addActionListener(ALisener); 
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2153,11 +2225,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return opticMountBarrelMountedPicatinny;
 			}
 			else if (myImageType == 3)
 			{
-				menuItem = new JMenuItem("M-25");
-				menuItem.addMouseListener(new MouseListener()
+				opticMountM25 = new JMenuItem("M-25");
+				opticMountM25.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2179,7 +2254,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticMountM25.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2200,11 +2277,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return opticMountM25;
 			}
 			else if (myImageType == 4)
 			{
-				menuItem = new JMenuItem("Socom - Short");
-				menuItem.addMouseListener(new MouseListener()
+				opticMountSocomShort = new JMenuItem("Socom - Short");
+				opticMountSocomShort.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2226,7 +2306,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticMountSocomShort.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2247,11 +2329,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return opticMountSocomShort;
 			}
 			else if (myImageType == 5)
 			{
-				menuItem = new JMenuItem("Socom - Extended");
-				menuItem.addMouseListener(new MouseListener()
+				opticMountSocomExtended = new JMenuItem("Socom - Extended");
+				opticMountSocomExtended.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2273,7 +2358,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticMountSocomExtended.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2294,11 +2381,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return opticMountSocomExtended;
 			}
 			else 
 			{
-				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(new MouseListener()
+				opticMountNone = new JMenuItem("None");
+				opticMountNone.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2320,7 +2410,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				opticMountNone.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -2341,6 +2433,8 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return opticMountNone;
 			}
 		}
 		else if (myImageArrayType == 6)
@@ -3616,7 +3710,8 @@ public class Menu
 			else
 			{
 				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(new MouseListener()
+				menuItem.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3638,7 +3733,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				menuItem.addActionListener(ALisener); 
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3655,10 +3752,14 @@ public class Menu
 					   // Calls next menu
 					   
 					}
-				});
+				}
+				*/
+				
 			}
 		}
 		return menuItem;
+		
+		
 	}
 	private static BufferedImage createImage(JPanel panel)
 	{
@@ -3669,19 +3770,50 @@ public class Menu
 		panel.paint(g);
 		return save;
 	}
-	private static void RecountMoney()
+	public static void RecountMoney()
 	{
 		int currentTotal = 0;
 		currentTotal = rifleTypeCost + actionTypeCost + barrelLenghtCost + opticsCost + opticMountCost + magazineCost + bipodCost + monopodCost + chassisColorCost + gripColorCost;
 		totalReminder.setText("Total: $" + currentTotal);
 	}
+	/*
 	public void actionPerformed(ActionEvent e)
 	{
-		System.out.println(e);
 		
-		MyFrame.one.setButtColour(1);
+		//if (e.getActionCommand)
+		
+		
+		
+		System.out.println(e.getActionCommand());
+		
+		
+		
+		
 		MyFrame.RePaint();
     } 
+	public void mouseEntered(MouseEvent e)
+	{
+		
+		MyFrame.RePaint();
+	}
+	public void mouseExited(MouseEvent e)
+	{
+		
+		MyFrame.RePaint();
+	}
+	public void mouseReleased(MouseEvent e)
+	{
+		MyFrame.RePaint();
+	}
+	public void mousePressed(MouseEvent e)
+	{
+		MyFrame.RePaint();
+	}
+	public void mouseClicked(MouseEvent e)
+	{
+		MyFrame.RePaint();
+	}
+	*/
 }
 
 /**
