@@ -437,9 +437,215 @@ public class ActionPreformer implements ActionListener
 				Menu.done[7] = true;
 			}
 		}
-		else if (e.getSource() == Menu.opticMountNone)
+		else if (e.getSource() == Menu.chassisColorBallisticWhite)
 		{
-			
+			// sets the ChassisColor image to "Ballistic White"
+			MyFrame.one.setChassisColor(1);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 1;
+			Menu.chassisColorReminder.setText("ChassisColor: Ballistic White($5000)");
+			Menu.chassisColorCost = 5000;
+		
+			// Calls next menu
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorGritTan)
+		{
+			// sets the ChassisColor image to "Grit Tan"
+			MyFrame.one.setChassisColor(2);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 2;
+			Menu.chassisColorReminder.setText("ChassisColor: Grit Tan($100)");
+			Menu.chassisColorCost = 100;
+			// Calls next menu
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorCoyoteBrown)
+		{
+			// sets the ChassisColor image to "Coyote Brown"
+			MyFrame.one.setChassisColor(3);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 3;
+			Menu.chassisColorReminder.setText("ChassisColor: Coyote Brown($150)");
+			Menu.chassisColorCost = 150;
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorDarkEarth)
+		{
+			// sets the ChassisColor image to "Dark Earth"
+			MyFrame.one.setChassisColor(4);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 4;
+			Menu.chassisColorReminder.setText("ChassisColor: Dark Earth($200)");
+			Menu.chassisColorCost = 200;
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorOliveDrab)
+		{
+			// sets the ChassisColor image to "Olive Drab"
+			MyFrame.one.setChassisColor(5);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 5;
+			Menu.chassisColorReminder.setText("ChassisColor: Olive Drab($250)");
+			Menu.chassisColorCost = 250;
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorLowLightGreen)
+		{
+			// sets the ChassisColor image to "Lowlight Green"
+			MyFrame.one.setChassisColor(6);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 6;
+			Menu.chassisColorReminder.setText("ChassisColor: Lowlight Green($275)");
+			Menu.chassisColorCost = 275;
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorSwatBlack)
+		{
+			// sets the ChassisColor image to "Swat Black"
+			MyFrame.one.setChassisColor(7);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 7;
+			Menu.chassisColorReminder.setText("ChassisColor: Swat Black($300)");
+			Menu.chassisColorCost = 300;
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorGIBrown)
+		{
+			// sets the ChassisColor image to "GI Brown"
+			MyFrame.one.setChassisColor(8);
+			Menu.chassisColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.chassisColor[5] = 8;
+			Menu.chassisColorReminder.setText("ChassisColor: GI Brown($350)");
+			Menu.chassisColorCost = 350;
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.chassisColorNone)
+		{
+			// sets the ChassisColor image to "GI Brown"
+			MyFrame.one.setChassisColor(0);
+			Menu.chassisColorMenu.setForeground(new Color(100, 0, 0));
+			Menu.chassisColor[5] = 0;
+			Menu.chassisColorReminder.setText("ChassisColor: None");
+			Menu.chassisColorCost = 0;
+			if (Menu.done[8] == false)
+			{
+				Menu.addM14GripColor();
+				Menu.done[8] = true;
+			}
+		}
+		else if (e.getSource() == Menu.gripColorBallisticWhite)
+		{
+			// sets the GripColor image to "Ballistic White"
+			MyFrame.one.setGripColor(1);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 1;
+			Menu.gripColorReminder.setText("GripColor: Ballistic White($50)");
+			Menu.gripColorCost = 50;
+		}
+		else if (e.getSource() == Menu.gripColorGritTan)
+		{
+			// sets the GripColor image to "Grit Tan"
+			MyFrame.one.setGripColor(2);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 2;
+			Menu.gripColorReminder.setText("GripColor: Grit Tan($100)");
+			Menu.gripColorCost = 100;
+		}
+		else if (e.getSource() == Menu.gripColorCoyoteBrown)
+		{
+			// sets the GripColor image to "Coyote Brown"
+			MyFrame.one.setGripColor(3);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 3;
+			Menu.gripColorReminder.setText("GripColor: Coyote Brown($150)");
+			Menu.gripColorCost = 150;
+		}
+		else if (e.getSource() == Menu.gripColorDarkEarth)
+		{
+			// sets the GripColor image to "Dark Earth"
+			MyFrame.one.setGripColor(4);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 4;
+			Menu.gripColorReminder.setText("GripColor: Dark Earth($200)");
+			Menu.gripColorCost = 200;
+		}
+		else if (e.getSource() == Menu.gripColorOliveDrab)
+		{
+			// sets the GripColor image to "Olive Drab"
+			MyFrame.one.setGripColor(5);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 5;
+			Menu.gripColorReminder.setText("GripColor: Olive Drab($250)");
+			Menu.gripColorCost = 250;
+		}
+		else if (e.getSource() == Menu.gripColorLowLightGreen)
+		{
+			// sets the GripColor image to "Lowlight Green"
+			MyFrame.one.setGripColor(6);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 6;
+			Menu.gripColorReminder.setText("GripColor: Lowlight Green($300)");
+			Menu.gripColorCost = 300;
+		}
+		else if (e.getSource() == Menu.gripColorSwatBlack)
+		{
+			// sets the GripColor image to "Swat Black"
+			MyFrame.one.setGripColor(7);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 7;
+			Menu.gripColorReminder.setText("GripColor: Swat Black($350)");
+			Menu.gripColorCost = 350;
+		}
+		else if (e.getSource() == Menu.gripColorGIBrown)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setGripColor(8);
+			Menu.gripColorMenu.setForeground(new Color(0, 100, 0));
+			Menu.gripColor[5] = 8;
+			Menu.gripColorReminder.setText("GripColor: GI Brown($400)");
+			Menu.gripColorCost = 400;
+		}
+		else if (e.getSource() == Menu.gripColorNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setGripColor(0);
+			Menu.gripColorMenu.setForeground(new Color(100, 0, 0));
+			Menu.gripColor[5] = 0;
+			Menu.gripColorReminder.setText("GripColor: None");
+			Menu.gripColorCost = 0;
 		}
 		System.out.println(e.getActionCommand());
 		System.out.println(e.getModifiers());

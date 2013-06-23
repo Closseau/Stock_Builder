@@ -2972,8 +2972,9 @@ public class Menu
 		{
 			if (myImageType == 1)
 			{
-				menuItem = new JMenuItem("Ballistic White");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorBallisticWhite = new JMenuItem("Ballistic White");
+				chassisColorBallisticWhite.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -2995,7 +2996,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorBallisticWhite.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3017,11 +3020,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return chassisColorBallisticWhite;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("Grit Tan");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorGritTan = new JMenuItem("Grit Tan");
+				chassisColorGritTan.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3043,7 +3049,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorGritTan.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3065,11 +3073,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorGritTan;
 			}
 			else if (myImageType == 3)
 			{
-				menuItem = new JMenuItem("Coyote Brown");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorCoyoteBrown = new JMenuItem("Coyote Brown");
+				chassisColorCoyoteBrown.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3091,7 +3102,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorCoyoteBrown.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3113,11 +3126,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorCoyoteBrown;
 			}
 			else if (myImageType == 4)
 			{
-				menuItem = new JMenuItem("Dark Earth");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorDarkEarth = new JMenuItem("Dark Earth");
+				chassisColorDarkEarth.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3139,7 +3155,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorDarkEarth.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3161,11 +3179,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorDarkEarth;
 			}
 			else if (myImageType == 5)
 			{
-				menuItem = new JMenuItem("Olive Drab");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorOliveDrab = new JMenuItem("Olive Drab");
+				chassisColorOliveDrab.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3187,7 +3208,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorOliveDrab.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3209,11 +3232,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorOliveDrab;
 			}
 			else if (myImageType == 6)
 			{
-				menuItem = new JMenuItem("Lowlight Green");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorLowLightGreen = new JMenuItem("Lowlight Green");
+				chassisColorLowLightGreen.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3235,7 +3261,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorLowLightGreen.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3257,11 +3285,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorLowLightGreen;
 			}
 			else if (myImageType == 7)
 			{
-				menuItem = new JMenuItem("Swat Black");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorSwatBlack = new JMenuItem("Swat Black");
+				chassisColorSwatBlack.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3283,7 +3314,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorSwatBlack.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3305,11 +3338,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorSwatBlack;
 			}
 			else if (myImageType == 8)
 			{
-				menuItem = new JMenuItem("GI Brown");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorGIBrown = new JMenuItem("GI Brown");
+				chassisColorGIBrown.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3331,7 +3367,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorGIBrown.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3353,11 +3391,14 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorGIBrown;
 			}
 			else
 			{
-				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(new MouseListener()
+				chassisColorNone = new JMenuItem("None");
+				chassisColorNone.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3379,7 +3420,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				chassisColorNone.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3401,14 +3444,17 @@ public class Menu
 						}
 					}
 				});
+				*/
+				return chassisColorNone;
 			}
 		}
 		else 
 		{
 			if (myImageType == 1)
 			{
-				menuItem = new JMenuItem("Ballistic White");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorBallisticWhite = new JMenuItem("Ballistic White");
+				gripColorBallisticWhite.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3430,7 +3476,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorBallisticWhite.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3448,11 +3496,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorBallisticWhite;
 			}
 			else if (myImageType == 2)
 			{
-				menuItem = new JMenuItem("Grit Tan");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorGritTan = new JMenuItem("Grit Tan");
+				gripColorGritTan.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3474,7 +3525,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorGritTan.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3492,11 +3545,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorGritTan;
 			}
 			else if (myImageType == 3)
 			{
-				menuItem = new JMenuItem("Coyote Brown");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorCoyoteBrown = new JMenuItem("Coyote Brown");
+				gripColorCoyoteBrown.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3518,7 +3574,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorCoyoteBrown.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3536,11 +3594,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorCoyoteBrown;
 			}
 			else if (myImageType == 4)
 			{
-				menuItem = new JMenuItem("Dark Earth");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorDarkEarth = new JMenuItem("Dark Earth");
+				gripColorDarkEarth.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3562,7 +3623,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorDarkEarth.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3580,11 +3643,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorDarkEarth;
 			}
 			else if (myImageType == 5)
 			{
-				menuItem = new JMenuItem("Olive Drab");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorOliveDrab = new JMenuItem("Olive Drab");
+				gripColorOliveDrab.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3606,7 +3672,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorOliveDrab.addActionListener(ALisener); 
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3624,11 +3692,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorOliveDrab;
 			}
 			else if (myImageType == 6)
 			{
-				menuItem = new JMenuItem("Lowlight Green");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorLowLightGreen = new JMenuItem("Lowlight Green");
+				gripColorLowLightGreen.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3650,7 +3721,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorLowLightGreen.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3668,11 +3741,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorLowLightGreen;
 			}
 			else if (myImageType == 7)
 			{
-				menuItem = new JMenuItem("Swat Black");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorSwatBlack = new JMenuItem("Swat Black");
+				gripColorSwatBlack.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3694,7 +3770,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorSwatBlack.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3712,11 +3790,14 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorSwatBlack;
 			}
 			else if (myImageType == 8)
 			{
-				menuItem = new JMenuItem("GI Brown");
-				menuItem.addMouseListener(new MouseListener()
+				gripColorGIBrown = new JMenuItem("GI Brown");
+				gripColorGIBrown.addMouseListener(MLisener);
+				/*
 				{
 					public void mouseEntered(MouseEvent e)
 					{
@@ -3738,7 +3819,9 @@ public class Menu
 					{
 					}
 				});
-				menuItem.addActionListener(new ActionListener() 
+				*/
+				gripColorGIBrown.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -3756,11 +3839,13 @@ public class Menu
 					   
 					}
 				});
+				*/
+				return gripColorGIBrown;
 			}
 			else
 			{
-				menuItem = new JMenuItem("None");
-				menuItem.addMouseListener(MLisener);
+				gripColorNone = new JMenuItem("None");
+				gripColorNone.addMouseListener(MLisener);
 				/*
 				{
 					public void mouseEntered(MouseEvent e)
@@ -3784,7 +3869,7 @@ public class Menu
 					}
 				});
 				*/
-				menuItem.addActionListener(ALisener); 
+				gripColorNone.addActionListener(ALisener); 
 				/*
 				{
 					public void actionPerformed(ActionEvent e)
@@ -3804,6 +3889,7 @@ public class Menu
 					}
 				}
 				*/
+				return gripColorNone;
 				
 			}
 		}

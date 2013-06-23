@@ -134,9 +134,77 @@ public class MousePreformer implements MouseListener
 		{
 			MyFrame.one.setMonopod(0);
 		}
-		else if (e.getSource() == Menu.opticMountNone)
+		else if (e.getSource() == Menu.chassisColorBallisticWhite)
 		{
-			
+			MyFrame.one.setChassisColor(1);
+		}
+		else if (e.getSource() == Menu.chassisColorGritTan)
+		{
+			MyFrame.one.setChassisColor(2);
+		}
+		else if (e.getSource() == Menu.chassisColorCoyoteBrown)
+		{
+			MyFrame.one.setChassisColor(3);
+		}
+		else if (e.getSource() == Menu.chassisColorDarkEarth)
+		{
+			MyFrame.one.setChassisColor(4);
+		}
+		else if (e.getSource() == Menu.chassisColorOliveDrab)
+		{
+			MyFrame.one.setChassisColor(5);
+		}
+		else if (e.getSource() == Menu.chassisColorLowLightGreen)
+		{
+			MyFrame.one.setChassisColor(6);
+		}
+		else if (e.getSource() == Menu.chassisColorSwatBlack)
+		{
+			MyFrame.one.setChassisColor(7);
+		}
+		else if (e.getSource() == Menu.chassisColorGIBrown)
+		{
+			MyFrame.one.setChassisColor(8);
+		}
+		else if (e.getSource() == Menu.chassisColorNone)
+		{
+			MyFrame.one.setChassisColor(0);
+		}
+		else if (e.getSource() == Menu.gripColorBallisticWhite)
+		{
+			MyFrame.one.setGripColor(1);
+		}
+		else if (e.getSource() == Menu.gripColorGritTan)
+		{
+			MyFrame.one.setGripColor(2);
+		}
+		else if (e.getSource() == Menu.gripColorCoyoteBrown)
+		{
+			MyFrame.one.setGripColor(3);
+		}
+		else if (e.getSource() == Menu.gripColorDarkEarth)
+		{
+			MyFrame.one.setGripColor(4);
+		}
+		else if (e.getSource() == Menu.gripColorOliveDrab)
+		{
+			MyFrame.one.setGripColor(5);
+		}
+		else if (e.getSource() == Menu.gripColorLowLightGreen)
+		{
+			MyFrame.one.setGripColor(6);
+		}
+		else if (e.getSource() == Menu.gripColorSwatBlack)
+		{
+			MyFrame.one.setGripColor(7);
+		}
+		else if (e.getSource() == Menu.gripColorGIBrown)
+		{
+			MyFrame.one.setGripColor(8);
+		}
+		else if (e.getSource() == Menu.gripColorNone)
+		{
+			MyFrame.one.setGripColor(0);
 		}
 		
 		MyFrame.RePaint();
@@ -260,9 +328,77 @@ public class MousePreformer implements MouseListener
 		{
 			MyFrame.one.setMonopod(Menu.monopod[5]);
 		}
-		else if (e.getSource() == Menu.opticMountNone)
+		else if (e.getSource() == Menu.chassisColorBallisticWhite)
 		{
-			
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorGritTan)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorCoyoteBrown)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorDarkEarth)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorOliveDrab)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorLowLightGreen)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorSwatBlack)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorGIBrown)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.chassisColorNone)
+		{
+			MyFrame.one.setChassisColor(Menu.chassisColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorBallisticWhite)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorGritTan)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorCoyoteBrown)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorDarkEarth)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorOliveDrab)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorLowLightGreen)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorSwatBlack)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorGIBrown)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
+		}
+		else if (e.getSource() == Menu.gripColorNone)
+		{
+			MyFrame.one.setGripColor(Menu.gripColor[5]);
 		}
 		MyFrame.RePaint();
 	}
