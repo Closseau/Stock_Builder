@@ -344,7 +344,6 @@ public class ActionPreformer implements ActionListener
 			// sets the Magazine image to "15 RD"
 			MyFrame.one.setMagazine(0);
 			Menu.magazineMenu.setForeground(new Color(100, 0, 0));
-			// repaints the Jframe
 			Menu.magazine[5] = 0;
 			Menu.magazineReminder.setText("Magazine: None");
 			Menu.magazineCost = 0;
@@ -352,6 +351,90 @@ public class ActionPreformer implements ActionListener
 			{
 				Menu.addM14Bipod();
 				Menu.done[5] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bipodHarris)
+		{
+			// sets the Bipod image to "Harris"
+			MyFrame.one.setBipod(1);
+			Menu.bipodMenu.setForeground(new Color(0, 100, 0));
+			Menu.bipod[5] = 1;
+			Menu.bipodReminder.setText("Bipod: Harris($50)");
+			Menu.bipodCost = 50;
+			if (Menu.done[6] == false)
+			{
+				Menu.addM14Monopod();
+				Menu.done[6] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bipodGGG)
+		{
+			// sets the Bipod image to "GG&G"
+			MyFrame.one.setBipod(2);
+			Menu.bipodMenu.setForeground(new Color(0, 100, 0));
+			Menu.bipod[5] = 2;
+			Menu.bipodReminder.setText("Bipod: GG&G($100)");
+			Menu.bipodCost = 100;
+			if (Menu.done[6] == false)
+			{
+				Menu.addM14Monopod();
+				Menu.done[6] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bipodAtlas)
+		{
+			// sets the Bipod image to "Atlas"
+			MyFrame.one.setBipod(3);
+			Menu.bipodMenu.setForeground(new Color(0, 100, 0));
+			Menu.bipod[5] = 3;
+			Menu.bipodReminder.setText("Bipod: Atlas($150)");
+			Menu.bipodCost = 150;
+			if (Menu.done[6] == false)
+			{
+				Menu.addM14Monopod();
+				Menu.done[6] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bipodNone)
+		{
+			// sets the Bipod image to None
+			MyFrame.one.setBipod(0);
+			Menu.bipodMenu.setForeground(new Color(100, 0, 0));
+			Menu.bipod[5] = 0;
+			Menu.bipodReminder.setText("Bipod: None");
+			Menu.bipodCost = 0;
+			if (Menu.done[6] == false)
+			{
+				Menu.addM14Monopod();
+				Menu.done[6] = true;
+			}
+		}
+		else if (e.getSource() == Menu.monopodBT)
+		{
+			// sets the Monopod image to "BT"
+			MyFrame.one.setMonopod(1);
+			Menu.monopodMenu.setForeground(new Color(0, 100, 0));
+			Menu.monopod[5] = 1;
+			Menu.monopodReminder.setText("Monopod: BT($50)");
+			Menu.monopodCost = 50;
+			if (Menu.done[7] == false)
+			{
+			Menu.addM14ChassisColor();
+			Menu.done[7] = true;
+			}
+		}
+		else if (e.getSource() == Menu.monopodNone)
+		{
+			// sets the Monopod image to "None"
+			MyFrame.one.setMonopod(0);
+			Menu.monopodMenu.setForeground(new Color(100, 0, 0));
+			Menu.monopod[5] = 0;
+			Menu.monopodReminder.setText("Monopod: None");
+			Menu.monopodCost = 0;
+			if (Menu.done[7] == false)
+			{
+				Menu.addM14ChassisColor();
+				Menu.done[7] = true;
 			}
 		}
 		else if (e.getSource() == Menu.opticMountNone)

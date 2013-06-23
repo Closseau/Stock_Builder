@@ -110,6 +110,30 @@ public class MousePreformer implements MouseListener
 		{
 			MyFrame.one.setMagazine(0);
 		}
+		else if (e.getSource() == Menu.bipodHarris)
+		{
+			MyFrame.one.setBipod(1);
+		}
+		else if (e.getSource() == Menu.bipodGGG)
+		{
+			MyFrame.one.setBipod(2);
+		}
+		else if (e.getSource() == Menu.bipodAtlas)
+		{
+			MyFrame.one.setBipod(3);
+		}
+		else if (e.getSource() == Menu.bipodNone)
+		{
+			MyFrame.one.setBipod(0);
+		}
+		else if (e.getSource() == Menu.monopodBT)
+		{
+			MyFrame.one.setMonopod(1);
+		}
+		else if (e.getSource() == Menu.monopodNone)
+		{
+			MyFrame.one.setMonopod(0);
+		}
 		else if (e.getSource() == Menu.opticMountNone)
 		{
 			
@@ -211,6 +235,30 @@ public class MousePreformer implements MouseListener
 		else if (e.getSource() == Menu.magazineNone)
 		{
 			MyFrame.one.setMagazine(Menu.magazine[5]);
+		}
+		else if (e.getSource() == Menu.bipodHarris)
+		{
+			MyFrame.one.setBipod(Menu.bipod[5]);
+		}
+		else if (e.getSource() == Menu.bipodGGG)
+		{
+			MyFrame.one.setBipod(Menu.bipod[5]);
+		}
+		else if (e.getSource() == Menu.bipodAtlas)
+		{
+			MyFrame.one.setBipod(Menu.bipod[5]);
+		}
+		else if (e.getSource() == Menu.bipodNone)
+		{
+			MyFrame.one.setBipod(Menu.bipod[5]);
+		}
+		else if (e.getSource() == Menu.monopodBT)
+		{
+			MyFrame.one.setMonopod(Menu.monopod[5]);
+		}
+		else if (e.getSource() == Menu.monopodNone)
+		{
+			MyFrame.one.setMonopod(Menu.monopod[5]);
 		}
 		else if (e.getSource() == Menu.opticMountNone)
 		{
