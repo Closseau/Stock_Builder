@@ -54,6 +54,7 @@ public class Menu
 	public static BufferedImage Stock;
 	public static ActionPreformer ALisener = new ActionPreformer();
 	public static MousePreformer MLisener = new MousePreformer();
+	public static MenuPreformer MeLisener = new MenuPreformer();
 	public Menu()
 	{	
 		int i;
@@ -216,27 +217,7 @@ public class Menu
 		actionTypeMenu = new JMenu("2. Action Type");
 		actionTypeMenu.setToolTipText("Choose Your actions type for your stock here");
 		actionTypeMenu.setMnemonic(KeyEvent.VK_M);
-        actionTypeMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-					
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-					
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//actionTypeMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-				
-		});
+        actionTypeMenu.addMenuListener(MeLisener);
 		actionTypeMenu.add(addNewMenuItem(2,1,0));
 		actionTypeMenu.add(addNewMenuItem(2,2,0));
 		actionTypeMenu.add(addNewMenuItem(2,3,0));
@@ -250,27 +231,7 @@ public class Menu
 	{
 		barrelLenghtMenu = new JMenu("3. Barrel Length");
 		barrelLenghtMenu.setMnemonic(KeyEvent.VK_M);
-        barrelLenghtMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-				//	barrelLenghtMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-			
-		});
+        barrelLenghtMenu.addMenuListener(MeLisener);
 		barrelLenghtMenu.add(addNewMenuItem(3,1,0));
 		barrelLenghtMenu.add(addNewMenuItem(3,2,0));
 		barrelLenghtMenu.add(addNewMenuItem(3,3,0));
@@ -283,27 +244,7 @@ public class Menu
 	{
 		opticsMenu = new JMenu("4. Optics");
 		opticsMenu.setMnemonic(KeyEvent.VK_M);
-        opticsMenu.addMenuListener(new MenuListener()
-		{
-		
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//opticsMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-			
-		});
+        opticsMenu.addMenuListener(MeLisener);
 		opticsMenu.add(addNewMenuItem(4,1,0));
 		opticsMenu.add(addNewMenuItem(4,2,0));
 		opticsMenu.add(addNewMenuItem(4,3,0));
@@ -315,27 +256,7 @@ public class Menu
 	{
 		opticMountMenu = new JMenu("5. OpticMount");
 		opticMountMenu.setMnemonic(KeyEvent.VK_M);
-        opticMountMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//opticMountMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-			
-		});
+        opticMountMenu.addMenuListener(MeLisener);
 		opticMountMenu.add(addNewMenuItem(5,1,0));
 		opticMountMenu.add(addNewMenuItem(5,2,0));
 		opticMountMenu.add(addNewMenuItem(5,3,0));
@@ -350,26 +271,7 @@ public class Menu
 	{
 		magazineMenu = new JMenu("6. Magazine");
 		magazineMenu.setMnemonic(KeyEvent.VK_M);
-        magazineMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//magazineMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-		});
+        magazineMenu.addMenuListener(MeLisener);
 		magazineMenu.add(addNewMenuItem(6,1,0));
 		magazineMenu.add(addNewMenuItem(6,2,0));
 		magazineMenu.add(addNewMenuItem(6,3,0));
@@ -382,27 +284,7 @@ public class Menu
 	{
 		bipodMenu = new JMenu("7. Bipod");
 		bipodMenu.setMnemonic(KeyEvent.VK_M);
-        bipodMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//bipodMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-			
-		});
+        bipodMenu.addMenuListener(MeLisener);
 		bipodMenu.add(addNewMenuItem(7,1,0));
 		bipodMenu.add(addNewMenuItem(7,2,0));
 		bipodMenu.add(addNewMenuItem(7,3,0));
@@ -415,27 +297,7 @@ public class Menu
 	{
 		monopodMenu = new JMenu("8. Monopod");
 		monopodMenu.setMnemonic(KeyEvent.VK_M);
-        monopodMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//monopodMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-			
-		});
+        monopodMenu.addMenuListener(MeLisener);
 		monopodMenu.add(addNewMenuItem(8,1,0));
 		monopodMenu.add(addNewMenuItem(8,2,0));
 		monopodMenu.setForeground(new Color(100, 0, 0));
@@ -446,27 +308,7 @@ public class Menu
 	{
 		chassisColorMenu = new JMenu("9. Chassis Color");
 		chassisColorMenu.setMnemonic(KeyEvent.VK_M);
-        chassisColorMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//chassisColorMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-			
-		});
+        chassisColorMenu.addMenuListener(MeLisener);
 		chassisColorMenu.add(addNewMenuItem(9,1,0));
 		chassisColorMenu.add(addNewMenuItem(9,2,0));
 		chassisColorMenu.add(addNewMenuItem(9,3,0));
@@ -484,31 +326,7 @@ public class Menu
 	{
 		gripColorMenu = new JMenu("10. Grip Color");
 		gripColorMenu.setMnemonic(KeyEvent.VK_M);
-        gripColorMenu.addMenuListener(new MenuListener()
-		{
-			
-				public void menuCanceled(MenuEvent e)
-				{
-
-				}
-				public void menuDeselected(MenuEvent e)
-				{
-					
-					//gripColorMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-				public void menuSelected(MenuEvent e)
-				{
-					
-					//gripColorMenu.setForeground(new Color(0, 0, 0));
-					menuBar.updateUI();
-					MyFrame.RePaint();
-					
-				}
-			
-		});
+        gripColorMenu.addMenuListener(MeLisener);
 		gripColorMenu.add(addNewMenuItem(10,1,0));
 		gripColorMenu.add(addNewMenuItem(10,2,0));
 		gripColorMenu.add(addNewMenuItem(10,3,0));
