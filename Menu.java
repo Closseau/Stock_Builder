@@ -19,7 +19,10 @@ public class Menu
 	public static JMenuItem menuItem, actionTypeStandard, actionTypeRearLug, actionTypeM25, actionTypeNone, barrelLenght16Inch, barrelLenght18Inch, barrelLenght20Inch, barrelLenghtNone, opticsScope, opticsReflexSight, opticsNone, opticMountBrooksStyle, opticMountBarrelMountedPicatinny
 	, opticMountM25, opticMountSocomShort, opticMountSocomExtended, opticMountNone, magazine5RD, magazine10RD, magazine20RD, magazineNone, bipodHarris, bipodGGG, bipodAtlas, bipodNone, monopodBT, monopodNone, chassisColorBallisticWhite
 	, chassisColorGritTan, chassisColorCoyoteBrown, chassisColorDarkEarth, chassisColorOliveDrab, chassisColorLowLightGreen, chassisColorTitaniumGrey, chassisColorSwatBlack, chassisColorGIBrown, chassisColorNone
-	, gripColorBallisticWhite, gripColorGritTan, gripColorCoyoteBrown, gripColorDarkEarth, gripColorOliveDrab, gripColorLowLightGreen, gripColorTitaniumGrey, gripColorSwatBlack, gripColorGIBrown, gripColorNone, rifleTypeM14, rifleTypeRem700;
+	, gripColorBallisticWhite, gripColorGritTan, gripColorCoyoteBrown, gripColorDarkEarth, gripColorOliveDrab, gripColorLowLightGreen, gripColorTitaniumGrey, gripColorSwatBlack, gripColorGIBrown, gripColorNone, rifleTypeM14, rifleTypeRem700
+	, brandLRBM25, brandLRBM14, brandSpringfieldSupermatchM1A, brandSpringfieldNationalM1A, brandSpringfieldM25Whitefeather, brandSpringfieldM21Tactical, brandSpringfieldLoadedM1A, brandSpringfieldStandardM1A
+	, brandSpringfieldScoutM1A, brandSpringfieldSocomII, brandSpringfieldSocom16, brandArmscorp, brandNorinco, brandPolytech, brandUSGISelectfire, quickBuild;
+	public static JMenuItem[] save = new JMenuItem[NumberSaveFiles + 1];
 	public static JMenuBar menuBar = new JMenuBar();
 	public static JLabel actionTypeReminder = new JLabel("", JLabel.LEADING);
 	public static JLabel barrelLenghtReminder = new JLabel("", JLabel.LEADING);
@@ -404,9 +407,10 @@ public class Menu
 				
 				if (myExtendedMenus == 1)
 				{	
-					menuItem = new JMenuItem("LRB M25");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandLRBM25 = new JMenuItem("LRB M25");
+					brandLRBM25.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandLRBM25.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -445,12 +449,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandLRBM25;
 				}
 				else if (myExtendedMenus == 2)
 				{	
-					menuItem = new JMenuItem("LRB M14");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandLRBM14 = new JMenuItem("LRB M14");
+					brandLRBM14.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandLRBM14.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -489,12 +496,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandLRBM14;
 				}
 				else if (myExtendedMenus == 3)
 				{	
-					menuItem = new JMenuItem("Springfield Supermatch M1A");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldSupermatchM1A = new JMenuItem("Springfield Supermatch M1A");
+					brandSpringfieldSupermatchM1A.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldSupermatchM1A.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -533,12 +543,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldSupermatchM1A;
 				}
 				else if (myExtendedMenus == 4)
 				{	
-					menuItem = new JMenuItem("Springfield National M1A");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldNationalM1A = new JMenuItem("Springfield National M1A");
+					brandSpringfieldNationalM1A.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldNationalM1A.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -577,12 +590,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldNationalM1A;
 				}
 				else if (myExtendedMenus == 5)
 				{	
-					menuItem = new JMenuItem("Springfield M25 Whitefeather");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldM25Whitefeather = new JMenuItem("Springfield M25 Whitefeather");
+					brandSpringfieldM25Whitefeather.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldM25Whitefeather.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -623,12 +639,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldM25Whitefeather;
 				}
 				else if (myExtendedMenus == 6)
 				{	
-					menuItem = new JMenuItem("Springfield M21 Tactical");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldM21Tactical = new JMenuItem("Springfield M21 Tactical");
+					brandSpringfieldM21Tactical.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldM21Tactical.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -667,12 +686,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldM21Tactical;
 				}
 				else if (myExtendedMenus == 7)
 				{	
-					menuItem = new JMenuItem("Springfield Loaded M1A");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldLoadedM1A = new JMenuItem("Springfield Loaded M1A");
+					brandSpringfieldLoadedM1A.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldLoadedM1A.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -711,12 +733,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldLoadedM1A;
 				}
 				else if (myExtendedMenus == 8)
 				{	
-					menuItem = new JMenuItem("Springfield Standard M1A");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldStandardM1A = new JMenuItem("Springfield Standard M1A");
+					brandSpringfieldStandardM1A.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldStandardM1A.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -755,12 +780,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldStandardM1A;
 				}
 				else if (myExtendedMenus == 9)
 				{	
-					menuItem = new JMenuItem("Springfield Scout M1A");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldScoutM1A = new JMenuItem("Springfield Scout M1A");
+					brandSpringfieldScoutM1A.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldScoutM1A.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -799,12 +827,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldScoutM1A;
 				}
 				else if (myExtendedMenus == 10)
 				{	
-					menuItem = new JMenuItem("Springfield Socom II (Top Rail Only)");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldSocomII = new JMenuItem("Springfield Socom II (Top Rail Only)");
+					brandSpringfieldSocomII.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldSocomII.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -845,12 +876,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldSocomII;
 				}
 				else if (myExtendedMenus == 11)
 				{	
-					menuItem = new JMenuItem("Springfield Socom 16");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandSpringfieldSocom16 = new JMenuItem("Springfield Socom 16");
+					brandSpringfieldSocom16.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandSpringfieldSocom16.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -890,12 +924,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandSpringfieldSocom16;
 				}
 				else if (myExtendedMenus == 12)
 				{	
-					menuItem = new JMenuItem("Armscorp");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandArmscorp = new JMenuItem("Armscorp");
+					brandArmscorp.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandArmscorp.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -934,12 +971,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandArmscorp;
 				}
 				else if (myExtendedMenus == 13)
 				{	
-					menuItem = new JMenuItem("Norinco");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandNorinco = new JMenuItem("Norinco");
+					brandNorinco.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandNorinco.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -978,12 +1018,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandNorinco;
 				}
 				else if (myExtendedMenus == 14)
 				{	
-					menuItem = new JMenuItem("Polytech");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandPolytech = new JMenuItem("Polytech");
+					brandPolytech.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandPolytech.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1022,12 +1065,15 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandPolytech;
 				}
 				else if (myExtendedMenus == 15)
 				{	
-					menuItem = new JMenuItem("USGI Selectfire");
-					menuItem.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
-					menuItem.addActionListener(new ActionListener() 
+					brandUSGISelectfire = new JMenuItem("USGI Selectfire");
+					brandUSGISelectfire.setToolTipText("<html>Brand info goes here;<br>" + " Cost: $150");
+					brandUSGISelectfire.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1066,11 +1112,14 @@ public class Menu
 							MyFrame.RePaint();
 						}
 					});
+					*/
+					return brandUSGISelectfire;
 				}
 				else
 				{	
-					menuItem = new JMenuItem("Quick Build");
-					menuItem.addActionListener(new ActionListener() 
+					quickBuild = new JMenuItem("Quick Build");
+					quickBuild.addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1099,14 +1148,17 @@ public class Menu
 							}	
 						}
 					});
+					*/
+					return quickBuild;
 				}
 			}
 			else if (myImageType == 4)
 			{
 				if (myExtendedMenus == 1)
 				{
-					menuItem = new JMenuItem("SaveFile" + 1);
-					menuItem.addActionListener(new ActionListener() 
+					save[0] = new JMenuItem("SaveFile" + 1);
+					save[0].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1122,11 +1174,13 @@ public class Menu
 							gripColor[0] = MyFrame.one.getGripColor();
 						}
 					});
+					*/
 				}	
 				else if (myExtendedMenus == 2)
 				{	
-					menuItem = new JMenuItem("SaveFile " + 2);
-					menuItem.addActionListener(new ActionListener() 
+					save[1] = new JMenuItem("SaveFile " + 2);
+					save[1].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1142,11 +1196,13 @@ public class Menu
 							gripColor[1] = MyFrame.one.getGripColor();
 						}
 					});
+					*/
 				}	
 				else if (myExtendedMenus == 3)
 				{		
-					menuItem = new JMenuItem("SaveFile " + 3);
-					menuItem.addActionListener(new ActionListener() 
+					save[2] = new JMenuItem("SaveFile " + 3);
+					save[2].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1162,11 +1218,13 @@ public class Menu
 							gripColor[2] = MyFrame.one.getGripColor();
 						}
 					});
+					*/
 				}	
 				else if (myExtendedMenus == 4)
 				{		
-					menuItem = new JMenuItem("SaveFile " + 4);
-					menuItem.addActionListener(new ActionListener() 
+					save[3] = new JMenuItem("SaveFile " + 4);
+					save[3].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1182,11 +1240,13 @@ public class Menu
 							gripColor[3] = MyFrame.one.getGripColor();
 						}
 					});
+					*/
 				}	
 				else
 				{		
-					menuItem = new JMenuItem("SaveFile " + 5);
-					menuItem.addActionListener(new ActionListener() 
+					save[4] = new JMenuItem("SaveFile " + 5);
+					save[4].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1202,6 +1262,7 @@ public class Menu
 							gripColor[4] = MyFrame.one.getGripColor();
 						}
 					});
+					*/
 				
 				}
 			}

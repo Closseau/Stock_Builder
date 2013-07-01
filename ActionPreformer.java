@@ -647,6 +647,611 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColorReminder.setText("GripColor: None");
 			Menu.gripColorCost = 0;
 		}
+		else if (e.getSource() == Menu.save[0])
+		{
+			Menu.rifleType[0] = MyFrame.one.getRifleType();
+			Menu.actionType[0] = MyFrame.one.getActionType();
+			Menu.barrelLenght[0] = MyFrame.one.getBarrelLenght();
+			Menu.optics[0] = MyFrame.one.getOptics();
+			Menu.opticMount[0] = MyFrame.one.getOpticMount();
+			Menu.magazine[0] = MyFrame.one.getMagazine();
+			Menu.bipod[0] = MyFrame.one.getBipod();
+			Menu.monopod[0] = MyFrame.one.getMonopod();
+			Menu.chassisColor[0] = MyFrame.one.getChassisColor();
+			Menu.gripColor[0] = MyFrame.one.getGripColor();
+		}
+		else if (e.getSource() == Menu.save[1])
+		{
+			Menu.rifleType[1] = MyFrame.one.getRifleType();
+			Menu.actionType[1] = MyFrame.one.getActionType();
+			Menu.barrelLenght[1] = MyFrame.one.getBarrelLenght();
+			Menu.optics[1] = MyFrame.one.getOptics();
+			Menu.opticMount[1] = MyFrame.one.getOpticMount();
+			Menu.magazine[1] = MyFrame.one.getMagazine();
+			Menu.bipod[1] = MyFrame.one.getBipod();
+			Menu.monopod[1] = MyFrame.one.getMonopod();
+			Menu.chassisColor[1] = MyFrame.one.getChassisColor();
+			Menu.gripColor[1] = MyFrame.one.getGripColor();
+		}
+		else if (e.getSource() == Menu.save[2])
+		{
+			Menu.rifleType[2] = MyFrame.one.getRifleType();
+			Menu.actionType[2] = MyFrame.one.getActionType();
+			Menu.barrelLenght[2] = MyFrame.one.getBarrelLenght();
+			Menu.optics[2] = MyFrame.one.getOptics();
+			Menu.opticMount[2] = MyFrame.one.getOpticMount();
+			Menu.magazine[2] = MyFrame.one.getMagazine();
+			Menu.bipod[2] = MyFrame.one.getBipod();
+			Menu.monopod[2] = MyFrame.one.getMonopod();
+			Menu.chassisColor[2] = MyFrame.one.getChassisColor();
+			Menu.gripColor[2] = MyFrame.one.getGripColor();
+		}
+		else if (e.getSource() == Menu.save[3])
+		{
+			Menu.rifleType[3] = MyFrame.one.getRifleType();
+			Menu.actionType[3] = MyFrame.one.getActionType();
+			Menu.barrelLenght[3] = MyFrame.one.getBarrelLenght();
+			Menu.optics[3] = MyFrame.one.getOptics();
+			Menu.opticMount[3] = MyFrame.one.getOpticMount();
+			Menu.magazine[3] = MyFrame.one.getMagazine();
+			Menu.bipod[3] = MyFrame.one.getBipod();
+			Menu.monopod[3] = MyFrame.one.getMonopod();
+			Menu.chassisColor[3] = MyFrame.one.getChassisColor();
+			Menu.gripColor[3] = MyFrame.one.getGripColor();
+		}
+		else if (e.getSource() == Menu.save[4])
+		{
+			Menu.rifleType[4] = MyFrame.one.getRifleType();
+			Menu.actionType[4] = MyFrame.one.getActionType();
+			Menu.barrelLenght[4] = MyFrame.one.getBarrelLenght();
+			Menu.optics[4] = MyFrame.one.getOptics();
+			Menu.opticMount[4] = MyFrame.one.getOpticMount();
+			Menu.magazine[4] = MyFrame.one.getMagazine();
+			Menu.bipod[4] = MyFrame.one.getBipod();
+			Menu.monopod[4] = MyFrame.one.getMonopod();
+			Menu.chassisColor[4] = MyFrame.one.getChassisColor();
+			Menu.gripColor[4] = MyFrame.one.getGripColor();
+		}
+		else if (e.getSource() == Menu.brandLRBM25)
+		{
+			
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD OR REAR LUG ~ (IMAGE AND BALOON NOTE)
+			
+			//* BARREL - 20 INCH ~ (IMAGE)
+			
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+			
+			//* GAS SYSTEM - UNITIZED ~ (BALLOON NOTE)
+			
+			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+		}
+		else if (e.getSource() == Menu.brandLRBM14)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD OR REAR LUG ~ (IMAGE AND BALOON NOTE)
+			
+			//* BARREL - 20 INCH ~ (IMAGE)
+			
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+			
+			//* GAS SYSTEM - Non-UNITIZED ~ (BALLOON NOTE)
+			
+			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldSupermatchM1A)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - REAR LUG ~ (IMAGE)
+			
+			//* BARREL - 20 INCH ~ (IMAGE)
+			
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+			
+			//* GAS SYSTEM - UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldNationalM1A)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldM25Whitefeather)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - REAR LUG ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
+
+			//* OPTIC MOUNT - M25 ~ (IMAGE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldM21Tactical)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldLoadedM1A)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldStandardM1A)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldScoutM1A)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 18 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldSocomII)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 16 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+
+			//* OPTIC MOUNT - SOCOM11 TOP RAIL ~ (IMAGE AND BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandSpringfieldSocom16)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+									
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 16 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandArmscorp)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandNorinco)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandPolytech)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - STANDARD ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.brandUSGISelectfire)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+			// Set rifle type to Othergun
+			//* RECEIVER - SELCETFIRE ~ (IMAGE)
+
+			//* BARREL - 20 INCH ~ (IMAGE)
+
+			//* MAGAZINE - 20 RD ~ (IMAGE)
+
+			//* GAS SYSTEM - NON-UNITIZED ~ (BALLOON NOTE)
+
+			//* GLASS BEDDED FACTORY STOCK - NO ~ (BALLOON NOTE)
+		}
+		else if (e.getSource() == Menu.quickBuild)
+		{
+			int i;
+			MyFrame.one.setRifleType(3);
+			Menu.rifleTypeCost = 150;
+			Menu.RecountMoney();
+			if (Menu.done[1] == false)
+			{
+				Menu.addM14ActionType();
+				Menu.addM14BarrelLenght();
+				Menu.addM14Optics();
+				Menu.addM14OpticMount();
+				Menu.addM14Magazine();
+				Menu.addM14Bipod();
+				Menu.addM14Monopod();
+				Menu.addM14ChassisColor();
+				Menu.addM14GripColor();
+				// call next menu
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = true;
+				}
+			}
+		}
 		System.out.println(e.getActionCommand());
 		System.out.println(e.getModifiers());
 		System.out.println(e.getWhen());
