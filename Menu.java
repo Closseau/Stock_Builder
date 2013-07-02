@@ -21,8 +21,9 @@ public class Menu
 	, chassisColorGritTan, chassisColorCoyoteBrown, chassisColorDarkEarth, chassisColorOliveDrab, chassisColorLowLightGreen, chassisColorTitaniumGrey, chassisColorSwatBlack, chassisColorGIBrown, chassisColorNone
 	, gripColorBallisticWhite, gripColorGritTan, gripColorCoyoteBrown, gripColorDarkEarth, gripColorOliveDrab, gripColorLowLightGreen, gripColorTitaniumGrey, gripColorSwatBlack, gripColorGIBrown, gripColorNone, rifleTypeM14, rifleTypeRem700
 	, brandLRBM25, brandLRBM14, brandSpringfieldSupermatchM1A, brandSpringfieldNationalM1A, brandSpringfieldM25Whitefeather, brandSpringfieldM21Tactical, brandSpringfieldLoadedM1A, brandSpringfieldStandardM1A
-	, brandSpringfieldScoutM1A, brandSpringfieldSocomII, brandSpringfieldSocom16, brandArmscorp, brandNorinco, brandPolytech, brandUSGISelectfire, quickBuild;
+	, brandSpringfieldScoutM1A, brandSpringfieldSocomII, brandSpringfieldSocom16, brandArmscorp, brandNorinco, brandPolytech, brandUSGISelectfire, quickBuild, reset, imageExporter;
 	public static JMenuItem[] save = new JMenuItem[NumberSaveFiles + 1];
+	public static JMenuItem[] load = new JMenuItem[NumberSaveFiles + 1];
 	public static JMenuBar menuBar = new JMenuBar();
 	public static JLabel actionTypeReminder = new JLabel("", JLabel.LEADING);
 	public static JLabel barrelLenghtReminder = new JLabel("", JLabel.LEADING);
@@ -140,8 +141,9 @@ public class Menu
 		submenu.add(addNewMenuItem(1,5,5));
 		menu.add(submenu);
 		menu.add(addNewMenuItem(1,6,0));
-		menuItem = new JMenuItem("Reset");
-		menuItem.addActionListener(new ActionListener() 
+		reset = new JMenuItem("Reset");
+		reset.addActionListener(ALisener);
+		/*
 		{
 			
             public void actionPerformed(ActionEvent e)
@@ -209,9 +211,10 @@ public class Menu
 				}
 			}
         });
+		*/
 		//menu.setForeground(new Color(0, 100, 0));
 		//menu.setBackground(new Color(0, 125, 125));
-		menu.add(menuItem);
+		menu.add(reset);
 
 		//addMenuItems();
 	}
@@ -1271,8 +1274,9 @@ public class Menu
 				
 				if (myExtendedMenus == 1)
 				{	
-					menuItem = new JMenuItem("LoadFile " + 1);
-					menuItem.addActionListener(new ActionListener() 
+					load[0] = new JMenuItem("LoadFile " + 1);
+					load[0].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1293,11 +1297,14 @@ public class Menu
 							
 						}
 					});
+					*/
+					return load[0];
 				}	
 				else if (myExtendedMenus == 2)
 				{		
-					menuItem = new JMenuItem("LoadFile " + 2);
-					menuItem.addActionListener(new ActionListener() 
+					load[1] = new JMenuItem("LoadFile " + 2);
+					load[1].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1318,11 +1325,14 @@ public class Menu
 							
 						}
 					});
+					*/
+					return load[1];
 				}	
 				else if (myExtendedMenus == 3)
 				{	
-					menuItem = new JMenuItem("LoadFile " + 3);
-					menuItem.addActionListener(new ActionListener() 
+					load[2] = new JMenuItem("LoadFile " + 3);
+					load[2].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1343,11 +1353,14 @@ public class Menu
 							
 						}
 					});
+					*/
+					return load[2];
 				}	
 				else if (myExtendedMenus == 4)
 				{		
-					menuItem = new JMenuItem("LoadFile " + 4);
-					menuItem.addActionListener(new ActionListener() 
+					load[3] = new JMenuItem("LoadFile " + 4);
+					load[3].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
@@ -1368,15 +1381,18 @@ public class Menu
 							
 						}
 					});
+					*/
+					return load[3];
 				}	
 				else
 				{		
-					menuItem = new JMenuItem("LoadFile " + 5);
-					menuItem.addActionListener(new ActionListener() 
+					load[4] = new JMenuItem("LoadFile " + 5);
+					load[4].addActionListener(ALisener);
+					/*
 					{
 						public void actionPerformed(ActionEvent e)
 						{
-							// Set rifle type to Rem 700
+							// Set rifle type to Rem 744
 							
 							MyFrame.one.setRifleType(rifleType[4]);
 							MyFrame.one.setActionType(actionType[4]);
@@ -1393,12 +1409,15 @@ public class Menu
 							
 						}
 					});
+					*/
+					return load[4];
 				}
 			}
 			else
 			{
-				menuItem = new JMenuItem("Export Current Image");
-				menuItem.addActionListener(new ActionListener() 
+				imageExporter = new JMenuItem("Export Current Image");
+				imageExporter.addActionListener(ALisener);
+				/*
 				{
 					public void actionPerformed(ActionEvent e)
 					{
@@ -1420,6 +1439,8 @@ public class Menu
 				
 					}
 				});
+				*/
+				return imageExporter;
 			}
 		}
 		else if (myImageArrayType == 2)
@@ -3776,7 +3797,7 @@ public class Menu
 		
 		
 	}
-	private static BufferedImage createImage(JPanel panel)
+	public static BufferedImage createImage(JPanel panel)
 	{
 		int width = panel.getWidth();
 		int height = panel.getHeight();

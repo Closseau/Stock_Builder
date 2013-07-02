@@ -26,7 +26,72 @@ public class ActionPreformer implements ActionListener
 	}
     public void actionPerformed(ActionEvent e)
 	{
-		if (e.getSource() == Menu.rifleTypeM14)
+	
+		if (e.getSource() == Menu.reset)
+		{
+			int i;
+			// retracts all menus and enables the rifle type selection
+			
+			Object[] message = { "If you Continue your saves will be deleted.  Click 'ok' to continue"};
+			i = MyFrame.PopUpMessage.showConfirmDialog(null, message, "Attention", MyFrame.PopUpMessage.OK_CANCEL_OPTION);
+			
+			if (i == JOptionPane.OK_OPTION)
+			{ 
+				while (1 < Menu.menuBar.getMenuCount())
+				{
+					Menu.menuBar.remove(1);
+				}
+				for (i = 0; i < 10; i++)
+				{
+					Menu.done[i] = false;
+				}
+				for (i = 0; i < Menu.NumberSaveFiles; i++)
+				{
+					Menu.rifleType[i] = 0;
+					Menu.actionType[i] = 0;
+					Menu.barrelLenght[i] = 0;
+					Menu.optics[i] = 0;
+					Menu.opticMount[i] = 0;
+					Menu.magazine[i] = 0;
+					Menu.bipod[i] = 0;
+					Menu.monopod[i] = 0;
+					Menu.chassisColor[i] = 0;
+					Menu.gripColor[i] = 0;
+				}
+				Menu.rifleTypeCost = 0;
+				Menu.actionTypeCost = 0;
+				Menu.barrelLenghtCost = 0;
+				Menu.opticsCost = 0;
+				Menu.opticMountCost = 0;
+				Menu.magazineCost = 0;
+				Menu.bipodCost = 0;
+				Menu.monopodCost = 0;
+				Menu.chassisColorCost = 0;
+				Menu.gripColorCost = 0;
+				Menu.RecountMoney();
+				Menu.actionTypeReminder.setText("");
+				Menu.barrelLenghtReminder.setText("");
+				Menu.opticReminder.setText("");
+				Menu.opticMountReminder.setText("");
+				Menu.magazineReminder.setText("");
+				Menu.bipodReminder.setText("");
+				Menu.monopodReminder.setText("");
+				Menu.chassisColorReminder.setText("");
+				Menu.gripColorReminder.setText("");
+				MyFrame.one.setRifleType(0);
+				MyFrame.one.setActionType(0);
+				MyFrame.one.setBarrelLenght(0);
+				MyFrame.one.setOptics(0);
+				MyFrame.one.setOpticMount(0);
+				MyFrame.one.setMagazine(0);
+				MyFrame.one.setBipod(0);
+				MyFrame.one.setMonopod(0);
+				MyFrame.one.setChassisColor(0);
+				MyFrame.one.setGripColor(0);
+				
+			}
+		}
+		else if (e.getSource() == Menu.rifleTypeM14)
 		{
 			// Set rifle type to m-14
 			MyFrame.one.setRifleType(1);
@@ -712,6 +777,71 @@ public class ActionPreformer implements ActionListener
 			Menu.chassisColor[4] = MyFrame.one.getChassisColor();
 			Menu.gripColor[4] = MyFrame.one.getGripColor();
 		}
+		else if (e.getSource() == Menu.load[0])
+		{
+			MyFrame.one.setRifleType(Menu.rifleType[0]);
+			MyFrame.one.setActionType(Menu.actionType[0]);
+			MyFrame.one.setBarrelLenght(Menu.barrelLenght[0]);
+			MyFrame.one.setOptics(Menu.optics[0]);
+			MyFrame.one.setOpticMount(Menu.opticMount[0]);
+			MyFrame.one.setMagazine(Menu.magazine[0]);
+			MyFrame.one.setBipod(Menu.bipod[0]);
+			MyFrame.one.setMonopod(Menu.monopod[0]);
+			MyFrame.one.setChassisColor(Menu.chassisColor[0]);
+			MyFrame.one.setGripColor(Menu.gripColor[0]);
+		}
+		else if (e.getSource() == Menu.load[1])
+		{
+			MyFrame.one.setRifleType(Menu.rifleType[1]);
+			MyFrame.one.setActionType(Menu.actionType[1]);
+			MyFrame.one.setBarrelLenght(Menu.barrelLenght[1]);
+			MyFrame.one.setOptics(Menu.optics[1]);
+			MyFrame.one.setOpticMount(Menu.opticMount[1]);
+			MyFrame.one.setMagazine(Menu.magazine[1]);
+			MyFrame.one.setBipod(Menu.bipod[1]);
+			MyFrame.one.setMonopod(Menu.monopod[1]);
+			MyFrame.one.setChassisColor(Menu.chassisColor[1]);
+			MyFrame.one.setGripColor(Menu.gripColor[1]);
+		}
+		else if (e.getSource() == Menu.load[2])
+		{
+			MyFrame.one.setRifleType(Menu.rifleType[2]);
+			MyFrame.one.setActionType(Menu.actionType[2]);
+			MyFrame.one.setBarrelLenght(Menu.barrelLenght[2]);
+			MyFrame.one.setOptics(Menu.optics[2]);
+			MyFrame.one.setOpticMount(Menu.opticMount[2]);
+			MyFrame.one.setMagazine(Menu.magazine[2]);
+			MyFrame.one.setBipod(Menu.bipod[2]);
+			MyFrame.one.setMonopod(Menu.monopod[2]);
+			MyFrame.one.setChassisColor(Menu.chassisColor[2]);
+			MyFrame.one.setGripColor(Menu.gripColor[2]);
+		}
+		else if (e.getSource() == Menu.load[3])
+		{
+			MyFrame.one.setRifleType(Menu.rifleType[3]);
+			MyFrame.one.setActionType(Menu.actionType[3]);
+			MyFrame.one.setBarrelLenght(Menu.barrelLenght[3]);
+			MyFrame.one.setOptics(Menu.optics[3]);
+			MyFrame.one.setOpticMount(Menu.opticMount[3]);
+			MyFrame.one.setMagazine(Menu.magazine[3]);
+			MyFrame.one.setBipod(Menu.bipod[3]);
+			MyFrame.one.setMonopod(Menu.monopod[3]);
+			MyFrame.one.setChassisColor(Menu.chassisColor[3]);
+			MyFrame.one.setGripColor(Menu.gripColor[3]);
+		}
+		else if (e.getSource() == Menu.load[4])
+		{
+			MyFrame.one.setRifleType(Menu.rifleType[4]);
+			MyFrame.one.setActionType(Menu.actionType[4]);
+			MyFrame.one.setBarrelLenght(Menu.barrelLenght[4]);
+			MyFrame.one.setOptics(Menu.optics[4]);
+			MyFrame.one.setOpticMount(Menu.opticMount[4]);
+			MyFrame.one.setMagazine(Menu.magazine[4]);
+			MyFrame.one.setBipod(Menu.bipod[4]);
+			MyFrame.one.setMonopod(Menu.monopod[4]);
+			MyFrame.one.setChassisColor(Menu.chassisColor[4]);
+			MyFrame.one.setGripColor(Menu.gripColor[4]);
+		}
 		else if (e.getSource() == Menu.brandLRBM25)
 		{
 			
@@ -727,9 +857,9 @@ public class ActionPreformer implements ActionListener
 			//* GLASS BEDDED FACTORY STOCK - YES ~ (BALLOON NOTE)
 			int i;
 			MyFrame.one.setRifleType(3);
-			Menu.rifleTypeCost = 150;
+			Menu.rifleTypeCost = 050;
 			Menu.RecountMoney();
-			if (Menu.done[1] == false)
+			if (Menu.done[0] == false)
 			{
 				Menu.addM14ActionType();
 				Menu.addM14BarrelLenght();
@@ -1252,6 +1382,25 @@ public class ActionPreformer implements ActionListener
 				}
 			}
 		}
+		else if (e.getSource() == Menu.imageExporter)
+		{
+			// Set rifle type to Rem 700
+			try
+			{
+			
+			File outputfile = new File(System.getProperty("user.home") + "/Desktop\\" + MyFrame.PopUpMessage.showInputDialog(null, "Please Print Desired Save File Name.  The image will be saved to your Desktop") + ".png");
+			ImageIO.write(Menu.createImage(MyFrame.MyStockImage), "png", outputfile);
+			}
+			//catch (AWTException j)
+			//{
+			
+			//}
+			catch (IOException k)
+			{
+			
+			}
+		}
+		
 		System.out.println(e.getActionCommand());
 		System.out.println(e.getModifiers());
 		System.out.println(e.getWhen());
