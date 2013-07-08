@@ -423,26 +423,31 @@ public class Menu
 				{
 					save[0] = new JMenuItem("SaveFile" + 1);
 					save[0].addActionListener(ALisener);
+					return save[0];
 				}	
 				else if (myExtendedMenus == 2)
 				{	
 					save[1] = new JMenuItem("SaveFile " + 2);
 					save[1].addActionListener(ALisener);
+					return save[1];
 				}	
 				else if (myExtendedMenus == 3)
 				{		
 					save[2] = new JMenuItem("SaveFile " + 3);
 					save[2].addActionListener(ALisener);
+					return save[2];
 				}	
 				else if (myExtendedMenus == 4)
 				{		
 					save[3] = new JMenuItem("SaveFile " + 4);
 					save[3].addActionListener(ALisener);
+					return save[3];
 				}	
 				else
 				{		
 					save[4] = new JMenuItem("SaveFile " + 5);
 					save[4].addActionListener(ALisener);
+					return save[4];
 				}
 			}
 			else if (myImageType == 5)
@@ -829,9 +834,6 @@ public class Menu
 				
 			}
 		}
-		return menuItem;
-		
-		
 	}
 	public static BufferedImage createImage(JPanel panel)
 	{
