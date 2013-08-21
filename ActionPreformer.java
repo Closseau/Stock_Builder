@@ -757,8 +757,645 @@ public class ActionPreformer implements ActionListener
 				Menu.done[9] = true;
 			}
 		}
-		
-		
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(1);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(2);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(3);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(4);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(5);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(6);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(7);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeSpacerColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(8);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(9);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(10);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(11);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(12);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(13);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(14);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(15);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(16);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(17);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(18);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(19);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(20);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(21);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(22);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(23);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeThumbWheelwQuickDetachColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(24);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("GripColor: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.cheekRestTypeNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setCheekRestType(0);
+			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestTypeReminder.setText("CheekRestType: None");
+			Menu.cheekRestTypeCost = 0;
+			if (Menu.done[10] == false)
+			{
+				Menu.addButtPad();
+				Menu.done[10] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(1);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(2);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(3);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(4);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(5);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(6);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(7);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadSpacerColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(8);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttPadNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtPad(0);
+			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttPad[5] = 0;
+			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttPadCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addButtSpacer();
+				Menu.done[11] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ1)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(1);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 1;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ2)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(2);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 2;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ3)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(3);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 3;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ4)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(4);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 4;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ5)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(5);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 5;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ6)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(6);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 6;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ7)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(7);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 7;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ8)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(8);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 8;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQ9)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(9);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 9;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		else if (e.getSource() == Menu.buttSpacerQNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(0);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 0;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[12] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[12] = true;
+			}
+		}
+		/* 
+		, palmRestColorBW, palmRestColorGT, palmRestColorCB, palmRestColorDE, palmRestColorOD, palmRestColorSB, palmRestColorLG, palmRestColorGIB, palmRestNone
+		, offHandRestYes, offHandRestNone, handGuardStandardColorBW, handGuardStandardColorGT, handGuardStandardColorCB, handGuardStandardColorDE, handGuardStandardColorOD, handGuardStandardColorSB, handGuardStandardColorLG, handGuardStandardColorGIB
+		, handGuardVentedColorBW, handGuardVentedColorGT, handGuardVentedColorCB, handGuardVentedColorDE, handGuardVentedColorOD, handGuardVentedColorSB, handGuardVentedColorLG, handGuardVentedColorGIB
+		, handGuardCutoutColorBW, handGuardCutoutColorGT, handGuardCutoutColorCB, handGuardCutoutColorDE, handGuardCutoutColorOD, handGuardCutoutColorSB, handGuardCutoutColorLG, handGuardCutoutColorGIB, handGuardNone, slingPlateYes, slingPlateNone, flushRailYes, flushRailNone
+		, sideRailAdaptersYes, sideRailAdaptersNone, sidePicatinnyRail2inch1, sidePicatinnyRail2inch2, sidePicatinnyRail4inch1, sidePicatinnyRail4inch2, sidePicatinnyRail6inch1, sidePicatinnyRail6inch2, sidePicatinnyRail9inch1, sidePicatinnyRail9inch2
+		, bottomPicatinnyRail2inch, bottomPicatinnyRail4inch, bottomPicatinnyRail6inch, bottomPicatinnyRail9inch, bottomPicatinnyRailNone
+		, bipodAdapterYes, bipodAdapterNone, lugSlideStandard, lugSlideTitanium, lugSlideNone, barrelTensionerYes, barrelTensionerNone, QDSlingSwivelsYes, QDSlingSwivelsNone
+		*/
+		else if (e.getSource() == Menu.palmRestColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setButtSpacer(0);
+			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
+			Menu.buttSpacer[5] = 0;
+			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
+			Menu.buttSpacerCost = 0;
+			if (Menu.done[11] == false)
+			{
+				Menu.addPalmRest();
+				Menu.done[11] = true;
+			}
+		}
 		else if (e.getSource() == Menu.save[0])
 		{
 			Menu.rifleType[0] = MyFrame.one.getRifleType();
