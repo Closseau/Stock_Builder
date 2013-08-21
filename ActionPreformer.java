@@ -639,6 +639,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 1;
 			Menu.gripColorReminder.setText("GripColor: Ballistic White($50)");
 			Menu.gripColorCost = 50;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorGritTan)
 		{
@@ -648,6 +653,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 2;
 			Menu.gripColorReminder.setText("GripColor: Grit Tan($100)");
 			Menu.gripColorCost = 100;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorCoyoteBrown)
 		{
@@ -657,6 +667,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 3;
 			Menu.gripColorReminder.setText("GripColor: Coyote Brown($150)");
 			Menu.gripColorCost = 150;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorDarkEarth)
 		{
@@ -666,6 +681,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 4;
 			Menu.gripColorReminder.setText("GripColor: Dark Earth($200)");
 			Menu.gripColorCost = 200;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorOliveDrab)
 		{
@@ -675,6 +695,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 5;
 			Menu.gripColorReminder.setText("GripColor: Olive Drab($250)");
 			Menu.gripColorCost = 250;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorLowLightGreen)
 		{
@@ -684,6 +709,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 6;
 			Menu.gripColorReminder.setText("GripColor: Lowlight Green($300)");
 			Menu.gripColorCost = 300;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorSwatBlack)
 		{
@@ -693,6 +723,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 7;
 			Menu.gripColorReminder.setText("GripColor: Swat Black($350)");
 			Menu.gripColorCost = 350;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorGIBrown)
 		{
@@ -702,6 +737,11 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 8;
 			Menu.gripColorReminder.setText("GripColor: GI Brown($400)");
 			Menu.gripColorCost = 400;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
 		else if (e.getSource() == Menu.gripColorNone)
 		{
@@ -711,7 +751,14 @@ public class ActionPreformer implements ActionListener
 			Menu.gripColor[5] = 0;
 			Menu.gripColorReminder.setText("GripColor: None");
 			Menu.gripColorCost = 0;
+			if (Menu.done[9] == false)
+			{
+				Menu.addCheekRestType();
+				Menu.done[9] = true;
+			}
 		}
+		
+		
 		else if (e.getSource() == Menu.save[0])
 		{
 			Menu.rifleType[0] = MyFrame.one.getRifleType();

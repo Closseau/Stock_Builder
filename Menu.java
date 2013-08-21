@@ -13,7 +13,7 @@ import javax.swing.JMenuItem;
 public class Menu 
 {
 	public static final int NumberSaveFiles = 5;
-	public static boolean[] done = new boolean[10];
+	public static boolean[] done = new boolean[25];
 	public static JMenu menu, submenu, submenu2, submenu3, cheekRestTypeSpacer, cheekRestTypeThumbWheel, cheekRestTypeThumbWheelwQuickDetach, buttPadSpacer, buttSpacerQuanity, palmRestColor, handGuardStandard, handGuardVented
 	, handGuardCutout, sidePicatinnyRail2inch, sidePicatinnyRail4inch, sidePicatinnyRail6inch, sidePicatinnyRail9inch;
 	public static JMenu actionTypeMenu, barrelLenghtMenu, opticsMenu, opticMountMenu, magazineMenu, bipodMenu, monopodMenu, chassisColorMenu, gripColorMenu
@@ -35,7 +35,7 @@ public class Menu
 	, handGuardCutoutColorBW, handGuardCutoutColorGT, handGuardCutoutColorCB, handGuardCutoutColorDE, handGuardCutoutColorOD, handGuardCutoutColorSB, handGuardCutoutColorLG, handGuardCutoutColorGIB, handGuardNone, slingPlateYes, slingPlateNone, flushRailYes, flushRailNone
 	, sideRailAdaptersYes, sideRailAdaptersNone, sidePicatinnyRail2inch1, sidePicatinnyRail2inch2, sidePicatinnyRail4inch1, sidePicatinnyRail4inch2, sidePicatinnyRail6inch1, sidePicatinnyRail6inch2, sidePicatinnyRail9inch1, sidePicatinnyRail9inch2
 	, bottomPicatinnyRail2inch, bottomPicatinnyRail4inch, bottomPicatinnyRail6inch, bottomPicatinnyRail9inch, bottomPicatinnyRailNone
-	, bipodAdapter, bipodAdapterNone, lugSlideStandard, lugSlideTitanium, lugSlideNone, barrelTensioner, barrelTensionerNone, QDSlingSwivels, QDSlingSwivelsNone, reset, imageExporter;
+	, bipodAdapterYes, bipodAdapterNone, lugSlideStandard, lugSlideTitanium, lugSlideNone, barrelTensionerYes, barrelTensionerNone, QDSlingSwivelsYes, QDSlingSwivelsNone, reset, imageExporter;
 	//ColorBW ColorGT ColorCB ColorDE ColorOD ColorSB ColorLG ColorGIB
 	public static JMenuItem[] save = new JMenuItem[NumberSaveFiles + 1];
 	public static JMenuItem[] load = new JMenuItem[NumberSaveFiles + 1];
@@ -49,6 +49,24 @@ public class Menu
 	public static JLabel monopodReminder = new JLabel("", JLabel.LEADING);
 	public static JLabel chassisColorReminder = new JLabel("", JLabel.LEADING);
 	public static JLabel gripColorReminder = new JLabel("", JLabel.LEADING);
+	//, cheekRestTypeMenu, buttPadMenu, buttSpacerMenu, palmRestMenu, offHandRestMenu, handGuardMenu
+	//, slingPlateMenu, flushRailMenu, sideRailAdaptersMenu, sidePicatinnyRailMenu
+	//, bottomPicatinnyRailMenu, bipodAdapterMenu, lugSlideMenu, barrelTensionerMenu, QDSlingSwivelsMenu;
+	public static JLabel cheekRestTypeReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel buttPadReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel buttSpacerReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel palmRestReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel offHandRestReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel handGuardReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel slingPlateReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel flushRailReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel sideRailAdaptersReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel sidePicatinnyRailReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel bottomPicatinnyRailReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel bipodAdapterReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel lugSlideReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel barrelTensionerReminder = new JLabel("", JLabel.LEADING);
+	public static JLabel QDSlingSwivelsReminder = new JLabel("", JLabel.LEADING);
 	public static JLabel totalReminder = new JLabel("Total: $0", JLabel.LEADING);
 	public static int rifleTypeCost = 0;
 	public static int actionTypeCost = 0;
@@ -60,6 +78,21 @@ public class Menu
 	public static int monopodCost = 0;
 	public static int chassisColorCost = 0;
 	public static int gripColorCost = 0;
+	public static int cheekRestTypeCost = 0;
+	public static int buttPadCost = 0;
+	public static int buttSpacerCost = 0;
+	public static int palmRestCost = 0;
+	public static int offHandRestCost = 0;
+	public static int handGuardCost = 0;
+	public static int slingPlateCost = 0;
+	public static int flushRailCost = 0;
+	public static int sideRailAdaptersCost = 0;
+	public static int sidePicatinnyRailCost = 0;
+	public static int bottomPicatinnyRailCost = 0;
+	public static int bipodAdapterCost = 0;
+	public static int lugSlideCost = 0;
+	public static int barrelTensionerCost = 0;
+	public static int QDSlingSwivelsCost = 0;
 	public static int[] rifleType = new int[NumberSaveFiles + 1];
 	public static int[] actionType = new int[NumberSaveFiles + 1];
 	public static int[] barrelLenght = new int[NumberSaveFiles + 1];
@@ -70,6 +103,21 @@ public class Menu
 	public static int[] monopod = new int[NumberSaveFiles + 1];
 	public static int[] chassisColor = new int[NumberSaveFiles + 1];
 	public static int[] gripColor = new int[NumberSaveFiles + 1];
+	public static int[] cheekRestType = new int[NumberSaveFiles + 1];
+	public static int[] buttPad = new int[NumberSaveFiles + 1];
+	public static int[] buttSpacer = new int[NumberSaveFiles + 1];
+	public static int[] palmRest = new int[NumberSaveFiles + 1];
+	public static int[] offHandRest = new int[NumberSaveFiles + 1];
+	public static int[] handGuard = new int[NumberSaveFiles + 1];
+	public static int[] slingPlate = new int[NumberSaveFiles + 1];
+	public static int[] flushRail = new int[NumberSaveFiles + 1];
+	public static int[] sideRailAdapters = new int[NumberSaveFiles + 1];
+	public static int[] sidePicatinnyRail = new int[NumberSaveFiles + 1];
+	public static int[] bottomPicatinnyRail = new int[NumberSaveFiles + 1];
+	public static int[] bipodAdapter = new int[NumberSaveFiles + 1];
+	public static int[] lugSlide = new int[NumberSaveFiles + 1];
+	public static int[] barrelTensioner = new int[NumberSaveFiles + 1];
+	public static int[] QDSlingSwivels = new int[NumberSaveFiles + 1];
 	public static BufferedImage Stock;
 	public static ActionPreformer ALisener = new ActionPreformer();
 	public static MousePreformer MLisener = new MousePreformer();
@@ -1910,10 +1958,10 @@ public class Menu
 		{
 			if (myImageType == 1)
 			{
-				bipodAdapter = new JMenuItem("Bipod Adapter");
-				bipodAdapter.addMouseListener(MLisener);
-				bipodAdapter.addActionListener(ALisener);
-				return bipodAdapter;
+				bipodAdapterYes = new JMenuItem("Bipod Adapter");
+				bipodAdapterYes.addMouseListener(MLisener);
+				bipodAdapterYes.addActionListener(ALisener);
+				return bipodAdapterYes;
 			}	
 			else
 			{
@@ -1951,10 +1999,10 @@ public class Menu
 		{
 			if (myImageType == 1)
 			{
-				barrelTensioner = new JMenuItem("Barrel Tensioner");
-				barrelTensioner.addMouseListener(MLisener);
-				barrelTensioner.addActionListener(ALisener);
-				return barrelTensioner;
+				barrelTensionerYes = new JMenuItem("Barrel Tensioner");
+				barrelTensionerYes.addMouseListener(MLisener);
+				barrelTensionerYes.addActionListener(ALisener);
+				return barrelTensionerYes;
 			}	
 			else
 			{
@@ -1968,10 +2016,10 @@ public class Menu
 		{
 			if (myImageType == 1)
 			{
-				QDSlingSwivels = new JMenuItem("QDSlingSwivels");
-				QDSlingSwivels.addMouseListener(MLisener);
-				QDSlingSwivels.addActionListener(ALisener);
-				return QDSlingSwivels;
+				QDSlingSwivelsYes = new JMenuItem("QDSlingSwivels");
+				QDSlingSwivelsYes.addMouseListener(MLisener);
+				QDSlingSwivelsYes.addActionListener(ALisener);
+				return QDSlingSwivelsYes;
 			}	
 			else
 			{

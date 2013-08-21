@@ -33,6 +33,37 @@ public class ImageTest extends Component
 	public static final int MyChassisColorLocationY = 0;
 	public static final int MyGripColorLocationX = 500;
 	public static final int MyGripColorLocationY = 200;
+	public static final int MyCheekRestTypeLocationx = 0;
+	public static final int MyCheekRestTypeLocationY = 0;
+	public static final int MyButtPadLocationx = 0;
+	public static final int MyButtPadLocationY = 0;
+	public static final int MyButtSpacerLocationx = 0;
+	public static final int MyButtSpacerLocationY = 0;
+	public static final int MyPalmRestLocationx = 0;
+	public static final int MyPalmRestLocationY = 0;
+	public static final int MyOffHandRestLocationx = 0;
+	public static final int MyOffHandRestLocationY = 0;
+	public static final int MyHandGuardLocationx = 0;
+	public static final int MyHandGuardLocationY = 0;
+	public static final int MySlingPlateLocationx = 0;
+	public static final int MySlingPlateLocationY = 0;
+	public static final int MyFlushRailLocationx = 0;
+	public static final int MyFlushRailLocationY = 0;
+	public static final int MySideRailAdaptersLocationx = 0;
+	public static final int MySideRailAdaptersLocationY = 0;
+	public static final int MySidePicatinnyRailLocationx = 0;
+	public static final int MySidePicatinnyRailLocationY = 0;
+	public static final int MyBottomPicatinnyRailLocationx = 0;
+	public static final int MyBottomPicatinnyRailLocationY = 0;
+	public static final int MyBipodAdapterLocationx = 0;
+	public static final int MyBipodAdapterLocationY = 0;
+	public static final int MyLugSlideLocationx = 0;
+	public static final int MyLugSlideLocationY = 0;
+	public static final int MyBarrelTensionerLocationx = 0;
+	public static final int MyBarrelTensionerLocationY = 0;
+	public static final int MyQDSlingSwivelsLocationx = 0;
+	public static final int MyQDSlingSwivelsLocationY = 0;
+	
 	public int rifleType = 0;
 	public int actionType = 0;
 	public int barrelLenght = 0;
@@ -43,6 +74,22 @@ public class ImageTest extends Component
 	public int monopod = 0;
 	public int chassisColor = 0;
 	public int gripColor = 0;
+	public int cheekRestType = 0;
+	public int buttPad = 0;
+	public int buttSpacer = 0;
+	public int palmRest = 0;
+	public int offHandRest = 0;
+	public int handGuard = 0;
+	public int slingPlate = 0;
+	public int flushRail = 0;
+	public int sideRailAdapters = 0;
+	public int sidePicatinnyRail = 0;
+	public int bottomPicatinnyRail = 0;
+	public int bipodAdapter = 0;
+	public int lugSlide = 0;
+	public int barrelTensioner = 0;
+	public int qDSlingSwivels = 0;		
+	
 	
 	BufferedImage[] RifleType = new BufferedImage[4];
 	BufferedImage[] ActionType = new BufferedImage[4];
@@ -54,6 +101,21 @@ public class ImageTest extends Component
 	BufferedImage[] Monopod = new BufferedImage[2];
 	BufferedImage[] ChassisColor = new BufferedImage[10];
 	BufferedImage[] GripColor = new BufferedImage[10];
+	BufferedImage[] CheekRestType = new BufferedImage[4];
+	BufferedImage[] ButtPad = new BufferedImage[4];
+	BufferedImage[] ButtSpacer = new BufferedImage[2];
+	BufferedImage[] PalmRest = new BufferedImage[10];
+	BufferedImage[] OffHandRest = new BufferedImage[10];
+	BufferedImage[] HandGuard = new BufferedImage[4];
+	BufferedImage[] SlingPlate = new BufferedImage[4];
+	BufferedImage[] FlushRail = new BufferedImage[2];
+	BufferedImage[] SideRailAdapters = new BufferedImage[10];
+	BufferedImage[] SidePicatinnyRail = new BufferedImage[10];
+	BufferedImage[] BottomPicatinnyRail = new BufferedImage[2];
+	BufferedImage[] BipodAdapter = new BufferedImage[10];
+	BufferedImage[] LugSlide = new BufferedImage[10];
+	BufferedImage[] BarrelTensioner = new BufferedImage[4];
+	BufferedImage[] QDSlingSwivels = new BufferedImage[4];
 	public ImageTest() 
 	{        
 		int i;
@@ -400,6 +462,126 @@ public class ImageTest extends Component
 	public void setGripColor(int color)
 	{
 		gripColor = color;
+	}
+	public int getCheekRestType()
+	{
+		return cheekRestType;
+	}
+	public void setCheekRestType(int color)
+	{
+		cheekRestType = color;
+	}
+	public int getButtPad()
+	{
+		return buttPad;
+	}
+	public void setButtPad(int color)
+	{
+		buttPad = color;
+	}
+	public int getButtSpacer()
+	{
+		return buttSpacer;
+	}
+	public void setButtSpacer(int color)
+	{
+		buttSpacer = color;
+	}
+	public int getPalmRest()
+	{
+		return palmRest;
+	}
+	public void setPalmRest(int color)
+	{
+		palmRest = color;
+	}
+	public int getOffHandRest()
+	{
+		return offHandRest;
+	}
+	public void setOffHandRest(int color)
+	{
+		offHandRest = color;
+	}
+	public int getHandGuard()
+	{
+		return handGuard;
+	}
+	public void setHandGuard(int color)
+	{
+		handGuard = color;
+	}
+	public int getSlingPlate()
+	{
+		return slingPlate;
+	}
+	public void setSlingPlate(int color)
+	{
+		slingPlate = color;
+	}
+	public int getFlushRail()
+	{
+		return flushRail;
+	}
+	public void setFlushRail(int color)
+	{
+		flushRail = color;
+	}
+	public int getSideRailAdapters()
+	{
+		return sideRailAdapters;
+	}
+	public void setSideRailAdapters(int color)
+	{
+		sideRailAdapters = color;
+	}
+	public int getSidePicatinnyRail()
+	{
+		return sidePicatinnyRail;
+	}
+	public void setSidePicatinnyRail(int color)
+	{
+		sidePicatinnyRail = color;
+	}
+	public int getBottomPicatinnyRail()
+	{
+		return bottomPicatinnyRail;
+	}
+	public void setBottomPicatinnyRail(int color)
+	{
+		bottomPicatinnyRail = color;
+	}
+	public int getBipodAdapter()
+	{
+		return bipodAdapter;
+	}
+	public void setBipodAdapter(int color)
+	{
+		bipodAdapter = color;
+	}
+	public int getLugSlide()
+	{
+		return lugSlide;
+	}
+	public void setLugSlide(int color)
+	{
+		lugSlide = color;
+	}
+	public int getBarrelTensioner()
+	{
+		return barrelTensioner;
+	}
+	public void setBarrelTensioner(int color)
+	{
+		barrelTensioner = color;
+	}
+	public int getQDSlingSwivels()
+	{
+		return qDSlingSwivels;
+	}
+	public void setQDSlingSwivels(int color)
+	{
+		qDSlingSwivels = color;
 	}
 	public int getDisplayWidth()
 	{
