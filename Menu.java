@@ -481,7 +481,7 @@ public class Menu
 		cheekRestTypeSpacer.add(addNewMenuItem(16,1,7));
 		cheekRestTypeSpacer.add(addNewMenuItem(16,1,8));
 		//cheekRestTypeSpacer.add(addNewMenuItem(16,1,9));
-		cheekRestTypeMenu.add(cheekRestTypeSpacer);
+		handGuardMenu.add(cheekRestTypeSpacer);
 		// change to sub menu (9colors)
 		cheekRestTypeThumbWheel = new JMenu("ThumbWheel");
 		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,1));
@@ -493,7 +493,7 @@ public class Menu
 		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,7));
 		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,8));
 		//cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,9));
-		cheekRestTypeMenu.add(cheekRestTypeThumbWheel);
+		handGuardMenu.add(cheekRestTypeThumbWheel);
 		// change to sub menu (9colors)
 		cheekRestTypeThumbWheelwQuickDetach = new JMenu("ThumbWheel W/Quick Detach");
 		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,1));
@@ -505,8 +505,8 @@ public class Menu
 		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,7));
 		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,8));
 		//cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,9));
-		cheekRestTypeMenu.add(cheekRestTypeThumbWheelwQuickDetach);
-		cheekRestTypeMenu.add(addNewMenuItem(16,4,0));
+		handGuardMenu.add(cheekRestTypeThumbWheelwQuickDetach);
+		handGuardMenu.add(addNewMenuItem(16,4,0));
 		handGuardMenu.setForeground(new Color(100, 0, 0));
 		menuBar.add(handGuardMenu);
 		MyFrame.RePaint();

@@ -1373,28 +1373,891 @@ public class ActionPreformer implements ActionListener
 				Menu.done[12] = true;
 			}
 		}
-		/* 
-		, palmRestColorBW, palmRestColorGT, palmRestColorCB, palmRestColorDE, palmRestColorOD, palmRestColorSB, palmRestColorLG, palmRestColorGIB, palmRestNone
-		, offHandRestYes, offHandRestNone, handGuardStandardColorBW, handGuardStandardColorGT, handGuardStandardColorCB, handGuardStandardColorDE, handGuardStandardColorOD, handGuardStandardColorSB, handGuardStandardColorLG, handGuardStandardColorGIB
-		, handGuardVentedColorBW, handGuardVentedColorGT, handGuardVentedColorCB, handGuardVentedColorDE, handGuardVentedColorOD, handGuardVentedColorSB, handGuardVentedColorLG, handGuardVentedColorGIB
-		, handGuardCutoutColorBW, handGuardCutoutColorGT, handGuardCutoutColorCB, handGuardCutoutColorDE, handGuardCutoutColorOD, handGuardCutoutColorSB, handGuardCutoutColorLG, handGuardCutoutColorGIB, handGuardNone, slingPlateYes, slingPlateNone, flushRailYes, flushRailNone
-		, sideRailAdaptersYes, sideRailAdaptersNone, sidePicatinnyRail2inch1, sidePicatinnyRail2inch2, sidePicatinnyRail4inch1, sidePicatinnyRail4inch2, sidePicatinnyRail6inch1, sidePicatinnyRail6inch2, sidePicatinnyRail9inch1, sidePicatinnyRail9inch2
-		, bottomPicatinnyRail2inch, bottomPicatinnyRail4inch, bottomPicatinnyRail6inch, bottomPicatinnyRail9inch, bottomPicatinnyRailNone
-		, bipodAdapterYes, bipodAdapterNone, lugSlideStandard, lugSlideTitanium, lugSlideNone, barrelTensionerYes, barrelTensionerNone, QDSlingSwivelsYes, QDSlingSwivelsNone
-		*/
 		else if (e.getSource() == Menu.palmRestColorBW)
 		{
 			// sets the GripColor image to "GI Brown"
-			MyFrame.one.setButtSpacer(0);
-			Menu.buttSpacerMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttSpacer[5] = 0;
-			Menu.buttSpacerReminder.setText("ButtPadSpacerColor: None");
-			Menu.buttSpacerCost = 0;
-			if (Menu.done[11] == false)
+			MyFrame.one.setPalmRest(1);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 1;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
 			{
-				Menu.addPalmRest();
-				Menu.done[11] = true;
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
 			}
+		}
+		else if (e.getSource() == Menu.palmRestColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(2);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 2;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.palmRestColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(3);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 3;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.palmRestColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(4);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 4;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.palmRestColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(5);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 5;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.palmRestColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(6);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 6;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.palmRestColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(7);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 7;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.palmRestColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(8);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 8;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.palmRestNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setPalmRest(0);
+			Menu.palmRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.palmRest[5] = 0;
+			Menu.palmRestReminder.setText("PalmRest: None");
+			Menu.palmRestCost = 0;
+			if (Menu.done[13] == false)
+			{
+				Menu.addOffHandRest();
+				Menu.done[13] = true;
+			}
+		}
+		else if (e.getSource() == Menu.offHandRestYes)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setOffHandRest(1);
+			Menu.offHandRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.offHandRest[5] = 1;
+			Menu.offHandRestReminder.setText("OffHandRest: Yes");
+			Menu.offHandRestCost = 0;
+			if (Menu.done[14] == false)
+			{
+				Menu.addHandGuard();
+				Menu.done[14] = true;
+			}
+		}
+		else if (e.getSource() == Menu.offHandRestNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setOffHandRest(0);
+			Menu.offHandRestMenu.setForeground(new Color(100, 0, 0));
+			Menu.offHandRest[5] = 0;
+			Menu.offHandRestReminder.setText("OffHandRest: None");
+			Menu.offHandRestCost = 0;
+			if (Menu.done[14] == false)
+			{
+				Menu.addHandGuard();
+				Menu.done[14] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(1);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 1;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(2);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 2;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(3);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 3;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(4);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 4;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(5);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 5;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(6);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 6;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(7);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 7;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardStandardColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(8);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 8;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(9);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 9;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(10);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 10;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(11);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 11;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(12);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 12;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(13);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 13;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(14);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 14;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(15);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 15;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardVentedColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(16);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 16;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorBW)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(17);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 17;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorGT)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(18);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 18;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorCB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(19);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 19;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorDE)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(20);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 20;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorOD)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(21);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 21;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorLG)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(22);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 22;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorSB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(23);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 23;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardCutoutColorGIB)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(24);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 24;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.handGuardNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setHandGuard(25);
+			Menu.handGuardMenu.setForeground(new Color(100, 0, 0));
+			Menu.handGuard[5] = 25;
+			Menu.handGuardReminder.setText("HandGuard: None");
+			Menu.handGuardCost = 0;
+			if (Menu.done[15] == false)
+			{
+				Menu.addSlingPlate();
+				Menu.done[15] = true;
+			}
+		}
+		else if (e.getSource() == Menu.slingPlateYes)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSlingPlate(1);
+			Menu.slingPlateMenu.setForeground(new Color(100, 0, 0));
+			Menu.slingPlate[5] = 1;
+			Menu.slingPlateReminder.setText("SlingPlate: Yes");
+			Menu.slingPlateCost = 0;
+			if (Menu.done[16] == false)
+			{
+				Menu.addFlushRail();
+				Menu.done[16] = true;
+			}
+		}
+		else if (e.getSource() == Menu.slingPlateNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSlingPlate(0);
+			Menu.slingPlateMenu.setForeground(new Color(100, 0, 0));
+			Menu.slingPlate[5] = 0;
+			Menu.slingPlateReminder.setText("SlingPlate: None");
+			Menu.slingPlateCost = 0;
+			if (Menu.done[16] == false)
+			{
+				Menu.addFlushRail();
+				Menu.done[16] = true;
+			}
+		}
+		else if (e.getSource() == Menu.flushRailYes)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setFlushRail(1);
+			Menu.flushRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.flushRail[5] = 1;
+			Menu.flushRailReminder.setText("FlushRail: Yes");
+			Menu.flushRailCost = 0;
+			if (Menu.done[17] == false)
+			{
+				Menu.addSideRailAdapter();
+				Menu.done[17] = true;
+			}
+		}
+		else if (e.getSource() == Menu.flushRailNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setFlushRail(0);
+			Menu.flushRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.flushRail[5] = 0;
+			Menu.flushRailReminder.setText("FlushRail: None");
+			Menu.flushRailCost = 0;
+			if (Menu.done[17] == false)
+			{
+				Menu.addSideRailAdapter();
+				Menu.done[17] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sideRailAdaptersYes)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSideRailAdapters(1);
+			Menu.sideRailAdaptersMenu.setForeground(new Color(100, 0, 0));
+			Menu.sideRailAdapters[5] = 1;
+			Menu.sideRailAdaptersReminder.setText("sideRailAdapters: Yes");
+			Menu.sideRailAdaptersCost = 0;
+			if (Menu.done[18] == false)
+			{
+				Menu.addSidePicatinnyRail();
+				Menu.done[18] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sideRailAdaptersNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSideRailAdapters(0);
+			Menu.sideRailAdaptersMenu.setForeground(new Color(100, 0, 0));
+			Menu.sideRailAdapters[5] = 0;
+			Menu.sideRailAdaptersReminder.setText("sideRailAdapters: None");
+			Menu.sideRailAdaptersCost = 0;
+			if (Menu.done[18] == false)
+			{
+				Menu.addSidePicatinnyRail();
+				Menu.done[18] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail2inch1)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(1);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 1;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail2inch2)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(2);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 2;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail4inch1)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(3);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 3;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail4inch2)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(4);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 4;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail6inch1)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(5);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 5;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail6inch2)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(6);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 6;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail9inch1)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(7);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 7;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.sidePicatinnyRail9inch2)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setSidePicatinnyRail(8);
+			Menu.sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.sidePicatinnyRail[5] = 8;
+			Menu.sidePicatinnyRailReminder.setText("sideRailAdapters: None");
+			Menu.sidePicatinnyRailCost = 0;
+			if (Menu.done[19] == false)
+			{
+				Menu.addBottomPicatinnyRail();
+				Menu.done[19] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bottomPicatinnyRail2inch)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBottomPicatinnyRail(1);
+			Menu.bottomPicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.bottomPicatinnyRail[5] = 1;
+			Menu.bottomPicatinnyRailReminder.setText("BottomPicatinnyRail: None");
+			Menu.bottomPicatinnyRailCost = 0;
+			if (Menu.done[20] == false)
+			{
+				Menu.addBipodAdapter();
+				Menu.done[20] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bottomPicatinnyRail4inch)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBottomPicatinnyRail(2);
+			Menu.bottomPicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.bottomPicatinnyRail[5] = 2;
+			Menu.bottomPicatinnyRailReminder.setText("BottomPicatinnyRail: None");
+			Menu.bottomPicatinnyRailCost = 0;
+			if (Menu.done[20] == false)
+			{
+				Menu.addBipodAdapter();
+				Menu.done[20] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bottomPicatinnyRail6inch)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBottomPicatinnyRail(3);
+			Menu.bottomPicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.bottomPicatinnyRail[5] = 3;
+			Menu.bottomPicatinnyRailReminder.setText("BottomPicatinnyRail: None");
+			Menu.bottomPicatinnyRailCost = 0;
+			if (Menu.done[20] == false)
+			{
+				Menu.addBipodAdapter();
+				Menu.done[20] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bottomPicatinnyRail9inch)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBottomPicatinnyRail(4);
+			Menu.bottomPicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.bottomPicatinnyRail[5] = 4;
+			Menu.bottomPicatinnyRailReminder.setText("BottomPicatinnyRail: None");
+			Menu.bottomPicatinnyRailCost = 0;
+			if (Menu.done[20] == false)
+			{
+				Menu.addBipodAdapter();
+				Menu.done[20] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bottomPicatinnyRailNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBottomPicatinnyRail(0);
+			Menu.bottomPicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+			Menu.bottomPicatinnyRail[5] = 0;
+			Menu.bottomPicatinnyRailReminder.setText("BottomPicatinnyRail: None");
+			Menu.bottomPicatinnyRailCost = 0;
+			if (Menu.done[20] == false)
+			{
+				Menu.addBipodAdapter();
+				Menu.done[20] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bipodAdapterYes)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBipodAdapter(1);
+			Menu.bipodAdapterMenu.setForeground(new Color(100, 0, 0));
+			Menu.bipodAdapter[5] = 1;
+			Menu.bipodAdapterReminder.setText("BipodAdapter: Yes");
+			Menu.bipodAdapterCost = 0;
+			if (Menu.done[21] == false)
+			{
+				Menu.addLugSlide();
+				Menu.done[21] = true;
+			}
+		}
+		else if (e.getSource() == Menu.bipodAdapterNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBipodAdapter(0);
+			Menu.bipodAdapterMenu.setForeground(new Color(100, 0, 0));
+			Menu.bipodAdapter[5] = 0;
+			Menu.bipodAdapterReminder.setText("BipodAdapter: None");
+			Menu.bipodAdapterCost = 0;
+			if (Menu.done[21] == false)
+			{
+				Menu.addLugSlide();
+				Menu.done[21] = true;
+			}
+		}
+		else if (e.getSource() == Menu.lugSlideStandard)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setLugSlide(1);
+			Menu.lugSlideMenu.setForeground(new Color(100, 0, 0));
+			Menu.lugSlide[5] = 1;
+			Menu.lugSlideReminder.setText("LugSlide: None");
+			Menu.lugSlideCost = 0;
+			if (Menu.done[22] == false)
+			{
+				Menu.addBarrelTensioner();
+				Menu.done[22] = true;
+			}
+		}
+		else if (e.getSource() == Menu.lugSlideTitanium)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setLugSlide(2);
+			Menu.lugSlideMenu.setForeground(new Color(100, 0, 0));
+			Menu.lugSlide[5] = 2;
+			Menu.lugSlideReminder.setText("LugSlide: None");
+			Menu.lugSlideCost = 0;
+			if (Menu.done[22] == false)
+			{
+				Menu.addBarrelTensioner();
+				Menu.done[22] = true;
+			}
+		}
+		else if (e.getSource() == Menu.lugSlideNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setLugSlide(0);
+			Menu.lugSlideMenu.setForeground(new Color(100, 0, 0));
+			Menu.lugSlide[5] = 0;
+			Menu.lugSlideReminder.setText("LugSlide: None");
+			Menu.lugSlideCost = 0;
+			if (Menu.done[22] == false)
+			{
+				Menu.addBarrelTensioner();
+				Menu.done[22] = true;
+			}
+		}
+		else if (e.getSource() == Menu.barrelTensionerYes)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBarrelTensioner(1);
+			Menu.barrelTensionerMenu.setForeground(new Color(100, 0, 0));
+			Menu.barrelTensioner[5] = 1;
+			Menu.barrelTensionerReminder.setText("BarrelTensioner: Yes");
+			Menu.barrelTensionerCost = 0;
+			if (Menu.done[23] == false)
+			{
+				Menu.addQDSlingSwivels();
+				Menu.done[23] = true;
+			}
+		}
+		else if (e.getSource() == Menu.barrelTensionerNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setBarrelTensioner(0);
+			Menu.barrelTensionerMenu.setForeground(new Color(100, 0, 0));
+			Menu.barrelTensioner[5] = 0;
+			Menu.barrelTensionerReminder.setText("BarrelTensioner: None");
+			Menu.barrelTensionerCost = 0;
+			if (Menu.done[23] == false)
+			{
+				Menu.addQDSlingSwivels();
+				Menu.done[23] = true;
+			}
+		}
+		else if (e.getSource() == Menu.QDSlingSwivelsYes)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setQDSlingSwivels(1);
+			Menu.QDSlingSwivelsMenu.setForeground(new Color(100, 0, 0));
+			Menu.QDSlingSwivels[5] = 1;
+			Menu.QDSlingSwivelsReminder.setText("BarrelTensioner: None");
+			Menu.QDSlingSwivelsCost = 0;
+		}
+		else if (e.getSource() == Menu.QDSlingSwivelsNone)
+		{
+			// sets the GripColor image to "GI Brown"
+			MyFrame.one.setQDSlingSwivels(0);
+			Menu.QDSlingSwivelsMenu.setForeground(new Color(100, 0, 0));
+			Menu.QDSlingSwivels[5] = 0;
+			Menu.QDSlingSwivelsReminder.setText("BarrelTensioner: None");
+			Menu.QDSlingSwivelsCost = 0;
 		}
 		else if (e.getSource() == Menu.save[0])
 		{
