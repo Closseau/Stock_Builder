@@ -14,14 +14,29 @@ public class Menu
 {
 	public static final int NumberSaveFiles = 5;
 	public static boolean[] done = new boolean[10];
-	public static JMenu menu, submenu, submenu2, submenu3;
-	public static JMenu actionTypeMenu, barrelLenghtMenu, opticsMenu, opticMountMenu, magazineMenu, bipodMenu, monopodMenu, chassisColorMenu, gripColorMenu;
+	public static JMenu menu, submenu, submenu2, submenu3, cheekRestTypeSpacer, cheekRestTypeThumbWheel, cheekRestTypeThumbWheelwQuickDetach, buttPadSpacer, buttSpacerQuanity, palmRestColor, handGuardStandard, handGuardVented
+	, handGuardCutout, sidePicatinnyRail2inch, sidePicatinnyRail4inch, sidePicatinnyRail6inch, sidePicatinnyRail9inch;
+	public static JMenu actionTypeMenu, barrelLenghtMenu, opticsMenu, opticMountMenu, magazineMenu, bipodMenu, monopodMenu, chassisColorMenu, gripColorMenu
+	, cheekRestTypeMenu, buttPadMenu, buttSpacerMenu, palmRestMenu, offHandRestMenu, handGuardMenu, slingPlateMenu, flushRailMenu, sideRailAdaptersMenu, sidePicatinnyRailMenu, bottomPicatinnyRailMenu, bipodAdapterMenu, lugSlideMenu, barrelTensionerMenu, QDSlingSwivelsMenu;
 	public static JMenuItem menuItem, actionTypeStandard, actionTypeRearLug, actionTypeM25, actionTypeNone, barrelLenght16Inch, barrelLenght18Inch, barrelLenght20Inch, barrelLenghtNone, opticsScope, opticsReflexSight, opticsNone, opticMountBrooksStyle, opticMountBarrelMountedPicatinny
 	, opticMountM25, opticMountSocomShort, opticMountSocomExtended, opticMountNone, magazine5RD, magazine10RD, magazine20RD, magazineNone, bipodHarris, bipodGGG, bipodAtlas, bipodNone, monopodBT, monopodNone, chassisColorBallisticWhite
 	, chassisColorGritTan, chassisColorCoyoteBrown, chassisColorDarkEarth, chassisColorOliveDrab, chassisColorLowLightGreen, chassisColorTitaniumGrey, chassisColorSwatBlack, chassisColorGIBrown, chassisColorNone
 	, gripColorBallisticWhite, gripColorGritTan, gripColorCoyoteBrown, gripColorDarkEarth, gripColorOliveDrab, gripColorLowLightGreen, gripColorTitaniumGrey, gripColorSwatBlack, gripColorGIBrown, gripColorNone, rifleTypeM14, rifleTypeRem700
 	, brandLRBM25, brandLRBM14, brandSpringfieldSupermatchM1A, brandSpringfieldNationalM1A, brandSpringfieldM25Whitefeather, brandSpringfieldM21Tactical, brandSpringfieldLoadedM1A, brandSpringfieldStandardM1A
-	, brandSpringfieldScoutM1A, brandSpringfieldSocomII, brandSpringfieldSocom16, brandArmscorp, brandNorinco, brandPolytech, brandUSGISelectfire, quickBuild, reset, imageExporter;
+	, brandSpringfieldScoutM1A, brandSpringfieldSocomII, brandSpringfieldSocom16, brandArmscorp, brandNorinco, brandPolytech, brandUSGISelectfire, quickBuild, cheekRestTypeSpacerColorBW
+	, cheekRestTypeSpacerColorGT, cheekRestTypeSpacerColorCB, cheekRestTypeSpacerColorDE, cheekRestTypeSpacerColorOD, cheekRestTypeSpacerColorLG, cheekRestTypeSpacerColorSB, cheekRestTypeSpacerColorGIB
+	, cheekRestTypeThumbWheelColorBW, cheekRestTypeThumbWheelColorGT, cheekRestTypeThumbWheelColorCB, cheekRestTypeThumbWheelColorDE, cheekRestTypeThumbWheelColorOD, cheekRestTypeThumbWheelColorSB, cheekRestTypeThumbWheelColorLG, cheekRestTypeThumbWheelColorGIB
+	, cheekRestTypeThumbWheelwQuickDetachColorBW, cheekRestTypeThumbWheelwQuickDetachColorGT, cheekRestTypeThumbWheelwQuickDetachColorCB, cheekRestTypeThumbWheelwQuickDetachColorDE, cheekRestTypeThumbWheelwQuickDetachColorOD, cheekRestTypeThumbWheelwQuickDetachColorSB, cheekRestTypeThumbWheelwQuickDetachColorLG, cheekRestTypeThumbWheelwQuickDetachColorGIB
+	, cheekRestTypeNone, buttPadSpacerColorBW, buttPadSpacerColorGT, buttPadSpacerColorCB, buttPadSpacerColorDE, buttPadSpacerColorOD, buttPadSpacerColorSB, buttPadSpacerColorLG, buttPadSpacerColorGIB
+	, buttPadNone, buttSpacerQ1, buttSpacerQ2, buttSpacerQ3, buttSpacerQ4, buttSpacerQ5, buttSpacerQ6, buttSpacerQ7, buttSpacerQ8, buttSpacerQ9, buttSpacerQNone
+	, palmRestColorBW, palmRestColorGT, palmRestColorCB, palmRestColorDE, palmRestColorOD, palmRestColorSB, palmRestColorLG, palmRestColorGIB, palmRestNone
+	, offHandRestYes, offHandRestNone, handGuardStandardColorBW, handGuardStandardColorGT, handGuardStandardColorCB, handGuardStandardColorDE, handGuardStandardColorOD, handGuardStandardColorSB, handGuardStandardColorLG, handGuardStandardColorGIB
+	, handGuardVentedColorBW, handGuardVentedColorGT, handGuardVentedColorCB, handGuardVentedColorDE, handGuardVentedColorOD, handGuardVentedColorSB, handGuardVentedColorLG, handGuardVentedColorGIB
+	, handGuardCutoutColorBW, handGuardCutoutColorGT, handGuardCutoutColorCB, handGuardCutoutColorDE, handGuardCutoutColorOD, handGuardCutoutColorSB, handGuardCutoutColorLG, handGuardCutoutColorGIB, handGuardNone, slingPlateYes, slingPlateNone, flushRailYes, flushRailNone
+	, sideRailAdaptersYes, sideRailAdaptersNone, sidePicatinnyRail2inch1, sidePicatinnyRail2inch2, sidePicatinnyRail4inch1, sidePicatinnyRail4inch2, sidePicatinnyRail6inch1, sidePicatinnyRail6inch2, sidePicatinnyRail9inch1, sidePicatinnyRail9inch2
+	, bottomPicatinnyRail2inch, bottomPicatinnyRail4inch, bottomPicatinnyRail6inch, bottomPicatinnyRail9inch, bottomPicatinnyRailNone
+	, bipodAdapter, bipodAdapterNone, lugSlideStandard, lugSlideTitanium, lugSlideNone, barrelTensioner, barrelTensionerNone, QDSlingSwivels, QDSlingSwivelsNone, reset, imageExporter;
+	//ColorBW ColorGT ColorCB ColorDE ColorOD ColorSB ColorLG ColorGIB
 	public static JMenuItem[] save = new JMenuItem[NumberSaveFiles + 1];
 	public static JMenuItem[] load = new JMenuItem[NumberSaveFiles + 1];
 	public static JMenuBar menuBar = new JMenuBar();
@@ -278,6 +293,298 @@ public class Menu
 		menuBar.add(gripColorMenu);
 		MyFrame.RePaint();
 	}
+	public static void addCheekRestType()
+	{
+		cheekRestTypeMenu = new JMenu("11. Cheek Rest");
+		cheekRestTypeMenu.setMnemonic(KeyEvent.VK_M);
+        cheekRestTypeMenu.addMenuListener(MeLisener);
+		// change to sub menu (9colors)
+		cheekRestTypeSpacer = new JMenu("Spacer");
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,1));
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,2));
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,3));
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,4));
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,5));
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,6));
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,7));
+		cheekRestTypeSpacer.add(addNewMenuItem(11,1,8));
+		//cheekRestTypeSpacer.add(addNewMenuItem(11,1,9));
+		cheekRestTypeMenu.add(cheekRestTypeSpacer);
+		// change to sub menu (9colors)
+		cheekRestTypeThumbWheel = new JMenu("ThumbWheel");
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,1));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,2));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,3));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,4));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,5));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,6));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,7));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,8));
+		//cheekRestTypeThumbWheel.add(addNewMenuItem(11,2,9));
+		cheekRestTypeMenu.add(cheekRestTypeThumbWheel);
+		// change to sub menu (9colors)
+		cheekRestTypeThumbWheelwQuickDetach = new JMenu("ThumbWheel W/Quick Detach");
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,1));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,2));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,3));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,4));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,5));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,6));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,7));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,8));
+		//cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(11,3,9));
+		cheekRestTypeMenu.add(cheekRestTypeThumbWheelwQuickDetach);
+		
+		cheekRestTypeMenu.add(addNewMenuItem(11,4,0));
+		cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(cheekRestTypeMenu);
+		MyFrame.RePaint();
+	}
+	public static void addButtPad()
+	{
+		buttPadMenu = new JMenu("12. ButtPad");
+		buttPadMenu.setMnemonic(KeyEvent.VK_M);
+        buttPadMenu.addMenuListener(MeLisener);
+		// submenu 9 colors
+		buttPadSpacer = new JMenu("Spacer");
+		buttPadSpacer.add(addNewMenuItem(12,1,1));
+		buttPadSpacer.add(addNewMenuItem(12,1,2));
+		buttPadSpacer.add(addNewMenuItem(12,1,3));
+		buttPadSpacer.add(addNewMenuItem(12,1,4));
+		buttPadSpacer.add(addNewMenuItem(12,1,5));
+		buttPadSpacer.add(addNewMenuItem(12,1,6));
+		buttPadSpacer.add(addNewMenuItem(12,1,7));
+		buttPadSpacer.add(addNewMenuItem(12,1,8));
+		//buttPadSpacer.add(addNewMenuItem(12,1,9));
+		buttPadMenu.add(buttPadSpacer);
+		buttPadMenu.add(addNewMenuItem(12,2,0));
+		buttPadMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(buttPadMenu);
+		MyFrame.RePaint();
+	}
+	public static void addButtSpacer()
+	{
+		buttSpacerMenu = new JMenu("13. Butt Spacer");
+		buttSpacerMenu.setMnemonic(KeyEvent.VK_M);
+        buttSpacerMenu.addMenuListener(MeLisener);
+		//submenu 1-9
+		buttSpacerQuanity = new JMenu("Quanity");
+		buttSpacerQuanity.add(addNewMenuItem(13,1,1));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,2));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,3));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,4));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,5));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,6));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,7));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,8));
+		buttSpacerQuanity.add(addNewMenuItem(13,1,9));
+		buttSpacerMenu.add(buttSpacerQuanity);
+		buttSpacerMenu.add(addNewMenuItem(13,2,0));
+		buttSpacerMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(buttSpacerMenu);
+		MyFrame.RePaint();
+	}
+	public static void addPalmRest()
+	{
+		palmRestMenu = new JMenu("14. Palm Rest");
+		palmRestMenu.setMnemonic(KeyEvent.VK_M);
+        palmRestMenu.addMenuListener(MeLisener);
+		// submenu (9color)
+		palmRestColor = new JMenu("Color");
+		palmRestColor.add(addNewMenuItem(14,1,1));
+		palmRestColor.add(addNewMenuItem(14,1,2));
+		palmRestColor.add(addNewMenuItem(14,1,3));
+		palmRestColor.add(addNewMenuItem(14,1,4));
+		palmRestColor.add(addNewMenuItem(14,1,5));
+		palmRestColor.add(addNewMenuItem(14,1,6));
+		palmRestColor.add(addNewMenuItem(14,1,7));
+		palmRestColor.add(addNewMenuItem(14,1,8));
+		//palmRestColor.add(addNewMenuItem(14,1,9));
+		palmRestMenu.add(palmRestColor);
+		palmRestMenu.add(addNewMenuItem(14,2,0));
+		palmRestMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(palmRestMenu);
+		MyFrame.RePaint();
+	}
+	public static void addOffHandRest()
+	{
+		offHandRestMenu = new JMenu("15. offHandRest");
+		offHandRestMenu.setMnemonic(KeyEvent.VK_M);
+        offHandRestMenu.addMenuListener(MeLisener);
+		offHandRestMenu.add(addNewMenuItem(15,1,0));
+		offHandRestMenu.add(addNewMenuItem(15,2,0));
+		offHandRestMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(offHandRestMenu);
+		MyFrame.RePaint();
+	}
+	public static void addHandGuard()
+	{
+		handGuardMenu = new JMenu("16. Hand Guard");
+		handGuardMenu.setMnemonic(KeyEvent.VK_M);
+        handGuardMenu.addMenuListener(MeLisener);
+		// change to sub menu (9colors)
+		cheekRestTypeSpacer = new JMenu("Spacer");
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,1));
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,2));
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,3));
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,4));
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,5));
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,6));
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,7));
+		cheekRestTypeSpacer.add(addNewMenuItem(16,1,8));
+		//cheekRestTypeSpacer.add(addNewMenuItem(16,1,9));
+		cheekRestTypeMenu.add(cheekRestTypeSpacer);
+		// change to sub menu (9colors)
+		cheekRestTypeThumbWheel = new JMenu("ThumbWheel");
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,1));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,2));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,3));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,4));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,5));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,6));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,7));
+		cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,8));
+		//cheekRestTypeThumbWheel.add(addNewMenuItem(16,2,9));
+		cheekRestTypeMenu.add(cheekRestTypeThumbWheel);
+		// change to sub menu (9colors)
+		cheekRestTypeThumbWheelwQuickDetach = new JMenu("ThumbWheel W/Quick Detach");
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,1));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,2));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,3));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,4));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,5));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,6));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,7));
+		cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,8));
+		//cheekRestTypeThumbWheelwQuickDetach.add(addNewMenuItem(16,3,9));
+		cheekRestTypeMenu.add(cheekRestTypeThumbWheelwQuickDetach);
+		cheekRestTypeMenu.add(addNewMenuItem(16,4,0));
+		handGuardMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(handGuardMenu);
+		MyFrame.RePaint();
+	}
+	public static void addSlingPlate()
+	{
+		slingPlateMenu = new JMenu("17. Sling Plate");
+		slingPlateMenu.setMnemonic(KeyEvent.VK_M);
+        slingPlateMenu.addMenuListener(MeLisener);
+		slingPlateMenu.add(addNewMenuItem(17,1,0));
+		slingPlateMenu.add(addNewMenuItem(17,2,0));
+		slingPlateMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(slingPlateMenu);
+		MyFrame.RePaint();
+	}
+	public static void addFlushRail()
+	{
+		flushRailMenu = new JMenu("18. Flush Rail");
+		flushRailMenu.setMnemonic(KeyEvent.VK_M);
+        flushRailMenu.addMenuListener(MeLisener);
+		flushRailMenu.add(addNewMenuItem(18,1,0));
+		flushRailMenu.add(addNewMenuItem(18,2,0));
+		flushRailMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(flushRailMenu);
+		MyFrame.RePaint();
+	}
+	public static void addSideRailAdapter()
+	{
+		sideRailAdaptersMenu = new JMenu("19. Side Rail Adapter");
+		sideRailAdaptersMenu.setMnemonic(KeyEvent.VK_M);
+        sideRailAdaptersMenu.addMenuListener(MeLisener);
+		sideRailAdaptersMenu.add(addNewMenuItem(19,1,0));
+		sideRailAdaptersMenu.add(addNewMenuItem(19,2,0));
+		sideRailAdaptersMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(sideRailAdaptersMenu);
+		MyFrame.RePaint();
+	}
+	public static void addSidePicatinnyRail()
+	{
+		sidePicatinnyRailMenu = new JMenu("20. Side Picatinny Rail");
+		sidePicatinnyRailMenu.setMnemonic(KeyEvent.VK_M);
+        sidePicatinnyRailMenu.addMenuListener(MeLisener);
+		// submenu 1-2
+		sidePicatinnyRail2inch = new JMenu("2inch");
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,1,1));
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,1,2));
+		sidePicatinnyRailMenu.add(sidePicatinnyRail2inch);
+		// submenu 1-2
+		sidePicatinnyRail4inch = new JMenu("4inch");
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,2,1));
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,2,2));
+		sidePicatinnyRailMenu.add(sidePicatinnyRail4inch);
+		// submenu 1-2
+		sidePicatinnyRail6inch = new JMenu("6inch");
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,3,1));
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,3,2));
+		sidePicatinnyRailMenu.add(sidePicatinnyRail6inch);
+		// submenu 1-2
+		sidePicatinnyRail9inch = new JMenu("9inch");
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,4,1));
+		sidePicatinnyRailMenu.add(addNewMenuItem(20,4,2));
+		sidePicatinnyRailMenu.add(sidePicatinnyRail9inch);
+		sidePicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(sidePicatinnyRailMenu);
+		MyFrame.RePaint();
+	}
+	public static void addBottomPicatinnyRail()
+	{
+		bottomPicatinnyRailMenu = new JMenu("21. Bottom Picatinny Rail");
+		bottomPicatinnyRailMenu.setMnemonic(KeyEvent.VK_M);
+        bottomPicatinnyRailMenu.addMenuListener(MeLisener);
+		bottomPicatinnyRailMenu.add(addNewMenuItem(21,1,0));
+		bottomPicatinnyRailMenu.add(addNewMenuItem(21,2,0));
+		bottomPicatinnyRailMenu.add(addNewMenuItem(21,3,0));
+		bottomPicatinnyRailMenu.add(addNewMenuItem(21,4,0));
+		bottomPicatinnyRailMenu.add(addNewMenuItem(21,5,0));
+		bottomPicatinnyRailMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(bottomPicatinnyRailMenu);
+		MyFrame.RePaint();
+	}
+	public static void addBipodAdapter()
+	{
+		bipodAdapterMenu = new JMenu("22. BipodAdapter");
+		bipodAdapterMenu.setMnemonic(KeyEvent.VK_M);
+        bipodAdapterMenu.addMenuListener(MeLisener);
+		bipodAdapterMenu.add(addNewMenuItem(22,1,0));
+		bipodAdapterMenu.add(addNewMenuItem(22,2,0));
+		bipodAdapterMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(bipodAdapterMenu);
+		MyFrame.RePaint();
+	}
+	public static void addLugSlide()
+	{
+		lugSlideMenu = new JMenu("23. Lug Slide");
+		lugSlideMenu.setMnemonic(KeyEvent.VK_M);
+        lugSlideMenu.addMenuListener(MeLisener);
+		lugSlideMenu.add(addNewMenuItem(23,1,0));
+		lugSlideMenu.add(addNewMenuItem(23,2,0));
+		lugSlideMenu.add(addNewMenuItem(23,3,0));
+		lugSlideMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(lugSlideMenu);
+		MyFrame.RePaint();
+	}
+	public static void addBarrelTensioner()
+	{
+		barrelTensionerMenu = new JMenu("24. Barrel Tensioner");
+		barrelTensionerMenu.setMnemonic(KeyEvent.VK_M);
+        barrelTensionerMenu.addMenuListener(MeLisener);
+		barrelTensionerMenu.add(addNewMenuItem(24,1,0));
+		barrelTensionerMenu.add(addNewMenuItem(24,2,0));
+		barrelTensionerMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(barrelTensionerMenu);
+		MyFrame.RePaint();
+	}
+	public static void addQDSlingSwivels()
+	{
+		QDSlingSwivelsMenu = new JMenu("25. QD Sling Swivels");
+		QDSlingSwivelsMenu.setMnemonic(KeyEvent.VK_M);
+        QDSlingSwivelsMenu.addMenuListener(MeLisener);
+		QDSlingSwivelsMenu.add(addNewMenuItem(25,1,0));
+		QDSlingSwivelsMenu.add(addNewMenuItem(25,2,0));
+		QDSlingSwivelsMenu.setForeground(new Color(100, 0, 0));
+		menuBar.add(QDSlingSwivelsMenu);
+		MyFrame.RePaint();
+	}
+	
 	public JMenuBar getMenuBar()
 	{
 		return menuBar;
@@ -767,7 +1074,7 @@ public class Menu
 				return chassisColorNone;
 			}
 		}
-		else 
+		else if (myImageArrayType == 10)
 		{
 			if (myImageType == 1)
 			{
@@ -833,6 +1140,846 @@ public class Menu
 				return gripColorNone;
 				
 			}
+		}
+		else if (myImageArrayType == 11)
+		{
+			if (myImageType == 1)
+			{
+				if (myExtendedMenus == 1)
+				{
+					cheekRestTypeSpacerColorBW = new JMenuItem("Ballistic White");
+					cheekRestTypeSpacerColorBW.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorBW.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					cheekRestTypeSpacerColorGT = new JMenuItem("Grit Tan");
+					cheekRestTypeSpacerColorGT.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorGT.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					cheekRestTypeSpacerColorCB = new JMenuItem("Coyote Brown");
+					cheekRestTypeSpacerColorCB.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorCB.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorCB;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					cheekRestTypeSpacerColorDE = new JMenuItem("Dark Earth");
+					cheekRestTypeSpacerColorDE.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorDE.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorDE;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					cheekRestTypeSpacerColorOD = new JMenuItem("Olive Drab");
+					cheekRestTypeSpacerColorOD.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorOD.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorOD;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					cheekRestTypeSpacerColorLG = new JMenuItem("Lowlight Green");
+					cheekRestTypeSpacerColorLG.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorLG.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorLG;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					cheekRestTypeSpacerColorSB = new JMenuItem("Swat Black");
+					cheekRestTypeSpacerColorSB.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorSB.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorSB;
+				}
+				else 
+				{
+					cheekRestTypeSpacerColorGIB = new JMenuItem("GI Brown");
+					cheekRestTypeSpacerColorGIB.addMouseListener(MLisener);
+					cheekRestTypeSpacerColorGIB.addActionListener(ALisener);
+					return cheekRestTypeSpacerColorGIB;
+				}
+			}
+			else if (myImageType == 2)
+			{
+				if (myExtendedMenus == 1)
+				{
+					cheekRestTypeThumbWheelColorBW = new JMenuItem("Ballistic White");
+					cheekRestTypeThumbWheelColorBW.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorBW.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					cheekRestTypeThumbWheelColorGT = new JMenuItem("Grit Tan");
+					cheekRestTypeThumbWheelColorGT.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorGT.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					cheekRestTypeThumbWheelColorCB = new JMenuItem("Coyote Brown");
+					cheekRestTypeThumbWheelColorCB.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorCB.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorCB;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					cheekRestTypeThumbWheelColorDE = new JMenuItem("Dark Earth");
+					cheekRestTypeThumbWheelColorDE.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorDE.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorDE;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					cheekRestTypeThumbWheelColorOD = new JMenuItem("Olive Drab");
+					cheekRestTypeThumbWheelColorOD.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorOD.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorOD;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					cheekRestTypeThumbWheelColorLG = new JMenuItem("Lowlight Green");
+					cheekRestTypeThumbWheelColorLG.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorLG.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorLG;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					cheekRestTypeThumbWheelColorSB = new JMenuItem("Swat Black");
+					cheekRestTypeThumbWheelColorSB.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorSB.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorSB;
+				}
+				else 
+				{
+					cheekRestTypeThumbWheelColorGIB = new JMenuItem("GI Brown");
+					cheekRestTypeThumbWheelColorGIB.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelColorGIB.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelColorGIB;
+				}
+			}
+			else if (myImageType == 3)
+			{
+				if (myExtendedMenus == 1)
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorBW = new JMenuItem("Ballistic White");
+					cheekRestTypeThumbWheelwQuickDetachColorBW.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorBW.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorGT = new JMenuItem("Grit Tan");
+					cheekRestTypeThumbWheelwQuickDetachColorGT.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorGT.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorCB = new JMenuItem("Coyote Brown");
+					cheekRestTypeThumbWheelwQuickDetachColorCB.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorCB.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorCB;
+				}
+				if (myExtendedMenus == 4)
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorDE = new JMenuItem("Dark Earth");
+					cheekRestTypeThumbWheelwQuickDetachColorDE.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorDE.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorDE;
+				}
+				if (myExtendedMenus == 5)
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorOD = new JMenuItem("Olive Drab");
+					cheekRestTypeThumbWheelwQuickDetachColorOD.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorOD.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorOD;
+				}
+				if (myExtendedMenus == 6)
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorLG = new JMenuItem("Lowlight Green");
+					cheekRestTypeThumbWheelwQuickDetachColorLG.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorLG.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorLG;
+				}
+				if (myExtendedMenus == 7)
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorSB = new JMenuItem("Swat Black");
+					cheekRestTypeThumbWheelwQuickDetachColorSB.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorSB.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorSB;
+				}
+				else 
+				{
+					cheekRestTypeThumbWheelwQuickDetachColorGIB = new JMenuItem("GI Brown");
+					cheekRestTypeThumbWheelwQuickDetachColorGIB.addMouseListener(MLisener);
+					cheekRestTypeThumbWheelwQuickDetachColorGIB.addActionListener(ALisener);
+					return cheekRestTypeThumbWheelwQuickDetachColorGIB;
+				}
+			}
+			else 
+			{
+				cheekRestTypeNone = new JMenuItem("None");
+				cheekRestTypeNone.addMouseListener(MLisener);
+				cheekRestTypeNone.addActionListener(ALisener);
+				return cheekRestTypeNone;
+			}
+		}
+		else if (myImageArrayType == 12)
+		{
+			if (myImageType == 1)
+			{
+				if (myExtendedMenus == 1)
+				{
+					buttPadSpacerColorBW = new JMenuItem("Ballistic White");
+					buttPadSpacerColorBW.addMouseListener(MLisener);
+					buttPadSpacerColorBW.addActionListener(ALisener);
+					return buttPadSpacerColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					buttPadSpacerColorGT = new JMenuItem("Grit Tan");
+					buttPadSpacerColorGT.addMouseListener(MLisener);
+					buttPadSpacerColorGT.addActionListener(ALisener);
+					return buttPadSpacerColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					buttPadSpacerColorCB = new JMenuItem("Coyote Brown");
+					buttPadSpacerColorCB.addMouseListener(MLisener);
+					buttPadSpacerColorCB.addActionListener(ALisener);
+					return buttPadSpacerColorCB;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					buttPadSpacerColorDE = new JMenuItem("Dark Earth");
+					buttPadSpacerColorDE.addMouseListener(MLisener);
+					buttPadSpacerColorDE.addActionListener(ALisener);
+					return buttPadSpacerColorDE;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					buttPadSpacerColorOD = new JMenuItem("Olive Drab");
+					buttPadSpacerColorOD.addMouseListener(MLisener);
+					buttPadSpacerColorOD.addActionListener(ALisener);
+					return buttPadSpacerColorOD;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					buttPadSpacerColorLG = new JMenuItem("Lowlight Green");
+					buttPadSpacerColorLG.addMouseListener(MLisener);
+					buttPadSpacerColorLG.addActionListener(ALisener);
+					return buttPadSpacerColorLG;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					buttPadSpacerColorSB = new JMenuItem("Swat Black");
+					buttPadSpacerColorSB.addMouseListener(MLisener);
+					buttPadSpacerColorSB.addActionListener(ALisener);
+					return buttPadSpacerColorSB;
+				}
+				else 
+				{
+					buttPadSpacerColorGIB = new JMenuItem("GI Brown");
+					buttPadSpacerColorGIB.addMouseListener(MLisener);
+					buttPadSpacerColorGIB.addActionListener(ALisener);
+					return buttPadSpacerColorGIB;
+				}
+			}
+			else 
+			{
+				buttPadNone = new JMenuItem("None");
+				buttPadNone.addMouseListener(MLisener);
+				buttPadNone.addActionListener(ALisener);
+				return buttPadNone;
+			}	
+		}
+		else if (myImageArrayType == 13)
+		{
+			if (myImageType == 1)
+			{
+				if (myExtendedMenus == 1)
+				{
+					buttSpacerQ1 = new JMenuItem("1");
+					buttSpacerQ1.addMouseListener(MLisener);
+					buttSpacerQ1.addActionListener(ALisener);
+					return buttSpacerQ1;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					buttSpacerQ2 = new JMenuItem("2");
+					buttSpacerQ2.addMouseListener(MLisener);
+					buttSpacerQ2.addActionListener(ALisener);
+					return buttSpacerQ2;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					buttSpacerQ3 = new JMenuItem("3");
+					buttSpacerQ3.addMouseListener(MLisener);
+					buttSpacerQ3.addActionListener(ALisener);
+					return buttSpacerQ3;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					buttSpacerQ4 = new JMenuItem("4");
+					buttSpacerQ4.addMouseListener(MLisener);
+					buttSpacerQ4.addActionListener(ALisener);
+					return buttSpacerQ4;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					buttSpacerQ5 = new JMenuItem("5");
+					buttSpacerQ5.addMouseListener(MLisener);
+					buttSpacerQ5.addActionListener(ALisener);
+					return buttSpacerQ5;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					buttSpacerQ6 = new JMenuItem("6");
+					buttSpacerQ6.addMouseListener(MLisener);
+					buttSpacerQ6.addActionListener(ALisener);
+					return buttSpacerQ6;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					buttSpacerQ7 = new JMenuItem("7");
+					buttSpacerQ7.addMouseListener(MLisener);
+					buttSpacerQ7.addActionListener(ALisener);
+					return buttSpacerQ7;
+				}
+				else if (myExtendedMenus == 8)
+				{
+					buttSpacerQ8 = new JMenuItem("8");
+					buttSpacerQ8.addMouseListener(MLisener);
+					buttSpacerQ8.addActionListener(ALisener);
+					return buttSpacerQ8;
+				}
+				else 
+				{
+					buttSpacerQ9 = new JMenuItem("9");
+					buttSpacerQ9.addMouseListener(MLisener);
+					buttSpacerQ9.addActionListener(ALisener);
+					return buttSpacerQ9;
+				}
+			}
+			else 
+			{
+				buttSpacerQNone = new JMenuItem("None");
+				buttSpacerQNone.addMouseListener(MLisener);
+				buttSpacerQNone.addActionListener(ALisener);
+				return buttSpacerQNone;
+			}	
+		}
+		else if (myImageArrayType == 14)
+		{
+			if (myImageType == 1)
+			{
+				if (myExtendedMenus == 1)
+				{
+					palmRestColorBW = new JMenuItem("Ballistic White");
+					palmRestColorBW.addMouseListener(MLisener);
+					palmRestColorBW.addActionListener(ALisener);
+					return palmRestColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					palmRestColorGT = new JMenuItem("Grit Tan");
+					palmRestColorGT.addMouseListener(MLisener);
+					palmRestColorGT.addActionListener(ALisener);
+					return palmRestColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					palmRestColorCB = new JMenuItem("Coyote Brown");
+					palmRestColorCB.addMouseListener(MLisener);
+					palmRestColorCB.addActionListener(ALisener);
+					return palmRestColorCB;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					palmRestColorDE = new JMenuItem("Dark Earth");
+					palmRestColorDE.addMouseListener(MLisener);
+					palmRestColorDE.addActionListener(ALisener);
+					return palmRestColorDE;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					palmRestColorOD = new JMenuItem("Olive Drab");
+					palmRestColorOD.addMouseListener(MLisener);
+					palmRestColorOD.addActionListener(ALisener);
+					return palmRestColorOD;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					palmRestColorLG = new JMenuItem("Lowlight Green");
+					palmRestColorLG.addMouseListener(MLisener);
+					palmRestColorLG.addActionListener(ALisener);
+					return palmRestColorLG;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					palmRestColorSB = new JMenuItem("Swat Black");
+					palmRestColorSB.addMouseListener(MLisener);
+					palmRestColorSB.addActionListener(ALisener);
+					return palmRestColorSB;
+				}
+				else 
+				{
+					palmRestColorGIB = new JMenuItem("GI Brown");
+					palmRestColorGIB.addMouseListener(MLisener);
+					palmRestColorGIB.addActionListener(ALisener);
+					return palmRestColorGIB;
+				}
+			}
+			else 
+			{
+				palmRestNone = new JMenuItem("None");
+				palmRestNone.addMouseListener(MLisener);
+				palmRestNone.addActionListener(ALisener);
+				return palmRestNone;
+			}	
+		}
+		else if (myImageArrayType == 15)
+		{
+			if (myImageType == 1)
+			{
+				offHandRestYes = new JMenuItem("Off Hand Rest");
+				offHandRestYes.addMouseListener(MLisener);
+				offHandRestYes.addActionListener(ALisener);
+				return offHandRestYes;
+			}	
+			else 
+			{
+				offHandRestNone = new JMenuItem("None");
+				offHandRestNone.addMouseListener(MLisener);
+				offHandRestNone.addActionListener(ALisener);
+				return offHandRestNone;
+			}	
+		}
+		else if (myImageArrayType == 16)
+		{
+			if (myImageType == 1)
+			{
+				if (myExtendedMenus == 1)
+				{
+					handGuardStandardColorBW = new JMenuItem("Ballistic White");
+					handGuardStandardColorBW.addMouseListener(MLisener);
+					handGuardStandardColorBW.addActionListener(ALisener);
+					return handGuardStandardColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					handGuardStandardColorGT = new JMenuItem("Grit Tan");
+					handGuardStandardColorGT.addMouseListener(MLisener);
+					handGuardStandardColorGT.addActionListener(ALisener);
+					return handGuardStandardColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					handGuardStandardColorCB = new JMenuItem("Coyote Brown");
+					handGuardStandardColorCB.addMouseListener(MLisener);
+					handGuardStandardColorCB.addActionListener(ALisener);
+					return handGuardStandardColorCB;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					handGuardStandardColorDE = new JMenuItem("Dark Earth");
+					handGuardStandardColorDE.addMouseListener(MLisener);
+					handGuardStandardColorDE.addActionListener(ALisener);
+					return handGuardStandardColorDE;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					handGuardStandardColorOD = new JMenuItem("Olive Drab");
+					handGuardStandardColorOD.addMouseListener(MLisener);
+					handGuardStandardColorOD.addActionListener(ALisener);
+					return handGuardStandardColorOD;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					handGuardStandardColorLG = new JMenuItem("Lowlight Green");
+					handGuardStandardColorLG.addMouseListener(MLisener);
+					handGuardStandardColorLG.addActionListener(ALisener);
+					return handGuardStandardColorLG;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					handGuardStandardColorSB = new JMenuItem("Swat Black");
+					handGuardStandardColorSB.addMouseListener(MLisener);
+					handGuardStandardColorSB.addActionListener(ALisener);
+					return handGuardStandardColorSB;
+				}
+				else 
+				{
+					handGuardStandardColorGIB = new JMenuItem("GI Brown");
+					handGuardStandardColorGIB.addMouseListener(MLisener);
+					handGuardStandardColorGIB.addActionListener(ALisener);
+					return handGuardStandardColorGIB;
+				}
+			}
+			else if (myImageType == 2)
+			{
+				if (myExtendedMenus == 1)
+				{
+					handGuardVentedColorBW = new JMenuItem("Ballistic White");
+					handGuardVentedColorBW.addMouseListener(MLisener);
+					handGuardVentedColorBW.addActionListener(ALisener);
+					return handGuardVentedColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					handGuardVentedColorGT = new JMenuItem("Grit Tan");
+					handGuardVentedColorGT.addMouseListener(MLisener);
+					handGuardVentedColorGT.addActionListener(ALisener);
+					return handGuardVentedColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					handGuardVentedColorCB = new JMenuItem("Coyote Brown");
+					handGuardVentedColorCB.addMouseListener(MLisener);
+					handGuardVentedColorCB.addActionListener(ALisener);
+					return handGuardVentedColorCB;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					handGuardVentedColorDE = new JMenuItem("Dark Earth");
+					handGuardVentedColorDE.addMouseListener(MLisener);
+					handGuardVentedColorDE.addActionListener(ALisener);
+					return handGuardVentedColorDE;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					handGuardVentedColorOD = new JMenuItem("Olive Drab");
+					handGuardVentedColorOD.addMouseListener(MLisener);
+					handGuardVentedColorOD.addActionListener(ALisener);
+					return handGuardVentedColorOD;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					handGuardVentedColorLG = new JMenuItem("Lowlight Green");
+					handGuardVentedColorLG.addMouseListener(MLisener);
+					handGuardVentedColorLG.addActionListener(ALisener);
+					return handGuardVentedColorLG;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					handGuardVentedColorSB = new JMenuItem("Swat Black");
+					handGuardVentedColorSB.addMouseListener(MLisener);
+					handGuardVentedColorSB.addActionListener(ALisener);
+					return handGuardVentedColorSB;
+				}
+				else 
+				{
+					handGuardVentedColorGIB = new JMenuItem("GI Brown");
+					handGuardVentedColorGIB.addMouseListener(MLisener);
+					handGuardVentedColorGIB.addActionListener(ALisener);
+					return handGuardVentedColorGIB;
+				}
+			}
+			else if (myImageType == 3)
+			{
+				if (myExtendedMenus == 1)
+				{
+					handGuardCutoutColorBW = new JMenuItem("Ballistic White");
+					handGuardCutoutColorBW.addMouseListener(MLisener);
+					handGuardCutoutColorBW.addActionListener(ALisener);
+					return handGuardCutoutColorBW;
+				}
+				else if (myExtendedMenus == 2)
+				{
+					handGuardCutoutColorGT = new JMenuItem("Grit Tan");
+					handGuardCutoutColorGT.addMouseListener(MLisener);
+					handGuardCutoutColorGT.addActionListener(ALisener);
+					return handGuardCutoutColorGT;
+				}
+				else if (myExtendedMenus == 3)
+				{
+					handGuardCutoutColorCB = new JMenuItem("Coyote Brown");
+					handGuardCutoutColorCB.addMouseListener(MLisener);
+					handGuardCutoutColorCB.addActionListener(ALisener);
+					return handGuardCutoutColorCB;
+				}
+				else if (myExtendedMenus == 4)
+				{
+					handGuardCutoutColorDE = new JMenuItem("Dark Earth");
+					handGuardCutoutColorDE.addMouseListener(MLisener);
+					handGuardCutoutColorDE.addActionListener(ALisener);
+					return handGuardCutoutColorDE;
+				}
+				else if (myExtendedMenus == 5)
+				{
+					handGuardCutoutColorOD = new JMenuItem("Olive Drab");
+					handGuardCutoutColorOD.addMouseListener(MLisener);
+					handGuardCutoutColorOD.addActionListener(ALisener);
+					return handGuardCutoutColorOD;
+				}
+				else if (myExtendedMenus == 6)
+				{
+					handGuardCutoutColorLG = new JMenuItem("Lowlight Green");
+					handGuardCutoutColorLG.addMouseListener(MLisener);
+					handGuardCutoutColorLG.addActionListener(ALisener);
+					return handGuardCutoutColorLG;
+				}
+				else if (myExtendedMenus == 7)
+				{
+					handGuardCutoutColorSB = new JMenuItem("Swat Black");
+					handGuardCutoutColorSB.addMouseListener(MLisener);
+					handGuardCutoutColorSB.addActionListener(ALisener);
+					return handGuardCutoutColorSB;
+				}
+				else 
+				{
+					handGuardCutoutColorGIB = new JMenuItem("GI Brown");
+					handGuardCutoutColorGIB.addMouseListener(MLisener);
+					handGuardCutoutColorGIB.addActionListener(ALisener);
+					return handGuardCutoutColorGIB;
+				}
+			}
+			else 
+			{
+				handGuardNone = new JMenuItem("None");
+				handGuardNone.addMouseListener(MLisener);
+				handGuardNone.addActionListener(ALisener);
+				return handGuardNone;
+			}
+		}
+		else if (myImageArrayType == 17)
+		{
+			if (myImageType == 1)
+			{
+				slingPlateYes = new JMenuItem("SlingPlate");
+				slingPlateYes.addMouseListener(MLisener);
+				slingPlateYes.addActionListener(ALisener);
+				return slingPlateYes;
+			}	
+			else 
+			{
+				slingPlateNone = new JMenuItem("None");
+				slingPlateNone.addMouseListener(MLisener);
+				slingPlateNone.addActionListener(ALisener);
+				return slingPlateNone;
+			}	
+		}
+		else if (myImageArrayType == 18)
+		{
+			if (myImageType == 1)
+			{
+				flushRailYes = new JMenuItem("FlushRail");
+				flushRailYes.addMouseListener(MLisener);
+				flushRailYes.addActionListener(ALisener);
+				return flushRailYes;
+			}	
+			else 
+			{
+				flushRailNone = new JMenuItem("None");
+				flushRailNone.addMouseListener(MLisener);
+				flushRailNone.addActionListener(ALisener);
+				return flushRailNone;
+			}	
+		}
+		else if (myImageArrayType == 19)
+		{
+			if (myImageType == 1)
+			{
+				sideRailAdaptersYes = new JMenuItem("Side Rail Adapters");
+				sideRailAdaptersYes.addMouseListener(MLisener);
+				sideRailAdaptersYes.addActionListener(ALisener);
+				return sideRailAdaptersYes;
+			}	
+			else 
+			{
+				sideRailAdaptersNone = new JMenuItem("None");
+				sideRailAdaptersNone.addMouseListener(MLisener);
+				sideRailAdaptersNone.addActionListener(ALisener);
+				return sideRailAdaptersNone;
+			}	
+		}
+		else if (myImageArrayType == 20)
+		{
+			if (myImageType == 1)
+			{
+				if (myExtendedMenus == 1)
+				{
+					sidePicatinnyRail2inch1 = new JMenuItem("None");
+					sidePicatinnyRail2inch1.addMouseListener(MLisener);
+					sidePicatinnyRail2inch1.addActionListener(ALisener);
+					return sidePicatinnyRail2inch1;
+				}
+				else 
+				{
+					sidePicatinnyRail2inch2 = new JMenuItem("None");
+					sidePicatinnyRail2inch2.addMouseListener(MLisener);
+					sidePicatinnyRail2inch2.addActionListener(ALisener);
+					return sidePicatinnyRail2inch2;
+				}
+			}
+			else if (myImageType == 2)
+			{
+				if (myExtendedMenus == 1)
+				{
+					sidePicatinnyRail4inch1 = new JMenuItem("None");
+					sidePicatinnyRail4inch1.addMouseListener(MLisener);
+					sidePicatinnyRail4inch1.addActionListener(ALisener);
+					return sidePicatinnyRail4inch1;
+				}
+				else 
+				{
+					sidePicatinnyRail4inch2 = new JMenuItem("None");
+					sidePicatinnyRail4inch2.addMouseListener(MLisener);
+					sidePicatinnyRail4inch2.addActionListener(ALisener);
+					return sidePicatinnyRail4inch2;
+				}
+			}
+			else if (myImageType == 3)
+			{
+				if (myExtendedMenus == 1)
+				{
+					sidePicatinnyRail6inch1 = new JMenuItem("None");
+					sidePicatinnyRail6inch1.addMouseListener(MLisener);
+					sidePicatinnyRail6inch1.addActionListener(ALisener);
+					return sidePicatinnyRail6inch1;
+				}
+				else 
+				{
+					sidePicatinnyRail6inch2 = new JMenuItem("None");
+					sidePicatinnyRail6inch2.addMouseListener(MLisener);
+					sidePicatinnyRail6inch2.addActionListener(ALisener);
+					return sidePicatinnyRail6inch2;
+				}
+			}
+			else
+			{
+				if (myExtendedMenus == 1)
+				{
+					sidePicatinnyRail9inch1 = new JMenuItem("None");
+					sidePicatinnyRail9inch1.addMouseListener(MLisener);
+					sidePicatinnyRail9inch1.addActionListener(ALisener);
+					return sidePicatinnyRail9inch1;
+				}
+				else 
+				{
+					sidePicatinnyRail9inch2 = new JMenuItem("None");
+					sidePicatinnyRail9inch2.addMouseListener(MLisener);
+					sidePicatinnyRail9inch2.addActionListener(ALisener);
+					return sidePicatinnyRail9inch2;
+				}
+			}
+		}
+		else if (myImageArrayType == 21)
+		{
+			if (myImageType == 1)
+			{
+				bottomPicatinnyRail2inch = new JMenuItem("2inch");
+				bottomPicatinnyRail2inch.addMouseListener(MLisener);
+				bottomPicatinnyRail2inch.addActionListener(ALisener);
+				return bottomPicatinnyRail2inch;
+			}	
+			else if (myImageType == 2)
+			{
+				bottomPicatinnyRail4inch = new JMenuItem("4inch");
+				bottomPicatinnyRail4inch.addMouseListener(MLisener);
+				bottomPicatinnyRail4inch.addActionListener(ALisener);
+				return bottomPicatinnyRail4inch;
+			}	
+			else if (myImageType == 3)
+			{
+				bottomPicatinnyRail6inch = new JMenuItem("6inch");
+				bottomPicatinnyRail6inch.addMouseListener(MLisener);
+				bottomPicatinnyRail6inch.addActionListener(ALisener);
+				return bottomPicatinnyRail6inch;
+			}	
+			else if (myImageType == 4)
+			{
+				bottomPicatinnyRail9inch = new JMenuItem("9inch");
+				bottomPicatinnyRail9inch.addMouseListener(MLisener);
+				bottomPicatinnyRail9inch.addActionListener(ALisener);
+				return bottomPicatinnyRail9inch;
+			}	
+			else 
+			{
+				bottomPicatinnyRailNone = new JMenuItem("None");
+				bottomPicatinnyRailNone.addMouseListener(MLisener);
+				bottomPicatinnyRailNone.addActionListener(ALisener);
+				return bottomPicatinnyRailNone;
+			}
+		}
+		else if (myImageArrayType == 22)
+		{
+			if (myImageType == 1)
+			{
+				bipodAdapter = new JMenuItem("Bipod Adapter");
+				bipodAdapter.addMouseListener(MLisener);
+				bipodAdapter.addActionListener(ALisener);
+				return bipodAdapter;
+			}	
+			else
+			{
+				bipodAdapterNone = new JMenuItem("None");
+				bipodAdapterNone.addMouseListener(MLisener);
+				bipodAdapterNone.addActionListener(ALisener);
+				return bipodAdapterNone;
+			}	
+		}
+		else if (myImageArrayType == 23)
+		{
+			if (myImageType == 1)
+			{
+				lugSlideStandard = new JMenuItem("Standard");
+				lugSlideStandard.addMouseListener(MLisener);
+				lugSlideStandard.addActionListener(ALisener);
+				return lugSlideStandard;
+			}	
+			else if (myImageType == 2)
+			{
+				lugSlideTitanium = new JMenuItem("Titanium");
+				lugSlideTitanium.addMouseListener(MLisener);
+				lugSlideTitanium.addActionListener(ALisener);
+				return lugSlideTitanium;
+			}	
+			else
+			{
+				lugSlideNone = new JMenuItem("None");
+				lugSlideNone.addMouseListener(MLisener);
+				lugSlideNone.addActionListener(ALisener);
+				return lugSlideNone;
+			}	
+		}
+		else if (myImageArrayType == 24)
+		{
+			if (myImageType == 1)
+			{
+				barrelTensioner = new JMenuItem("Barrel Tensioner");
+				barrelTensioner.addMouseListener(MLisener);
+				barrelTensioner.addActionListener(ALisener);
+				return barrelTensioner;
+			}	
+			else
+			{
+				barrelTensionerNone = new JMenuItem("None");
+				barrelTensionerNone.addMouseListener(MLisener);
+				barrelTensionerNone.addActionListener(ALisener);
+				return barrelTensionerNone;
+			}	
+		}
+		else
+		{
+			if (myImageType == 1)
+			{
+				QDSlingSwivels = new JMenuItem("QDSlingSwivels");
+				QDSlingSwivels.addMouseListener(MLisener);
+				QDSlingSwivels.addActionListener(ALisener);
+				return QDSlingSwivels;
+			}	
+			else
+			{
+				QDSlingSwivelsNone = new JMenuItem("None");
+				QDSlingSwivelsNone.addMouseListener(MLisener);
+				QDSlingSwivelsNone.addActionListener(ALisener);
+				return QDSlingSwivelsNone;
+			}	
 		}
 	}
 	public static BufferedImage createImage(JPanel panel)
