@@ -31,7 +31,7 @@ public class ImageTest extends Component
 	public static final int MyMonopodLocationY = 600;
 	public static final int MyChassisColorLocationX = 100;
 	public static final int MyChassisColorLocationY = 200;
-	public static final int MyGripColorLocationX = 500;
+	public static final int MyGripColorLocationX = 0;
 	public static final int MyGripColorLocationY = 200;
 	public static final int MyCheekRestTypeLocationx = 0;
 	public static final int MyCheekRestTypeLocationY = 0;
@@ -336,6 +336,70 @@ public class ImageTest extends Component
 				}
 			}
 			
+			GripColor[0] = null;
+			GripColor[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "GripColor1.png"));  
+			GripColor[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor2.png"));
+			GripColor[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor3.png"));
+			GripColor[4] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor4.png"));
+			GripColor[5] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor5.png"));
+			GripColor[6] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor6.png"));
+			GripColor[7] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor7.png"));
+			GripColor[8] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor8.png"));
+			GripColor[9] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor9.png"));
+			
+			
+			for (y = 0; y < 113; y++)
+			{
+				for (x = 0; x < 140; x++)
+				{
+					if (GripColor[1].getRGB(x, y) >= -500000)
+					{
+						GripColor[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			/*
+			
+					BufferedImage[] CheekRestType = new BufferedImage[4];
+					BufferedImage[] ButtPad = new BufferedImage[4];
+					BufferedImage[] ButtSpacer = new BufferedImage[2];
+					BufferedImage[] PalmRest = new BufferedImage[10];
+					BufferedImage[] OffHandRest = new BufferedImage[10];
+					BufferedImage[] HandGuard = new BufferedImage[4];
+					BufferedImage[] SlingPlate = new BufferedImage[4];
+					BufferedImage[] FlushRail = new BufferedImage[2];
+			*/
+			CheekRestType[0] = null;
+			CheekRestType[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "CheekRest1.png"));  
+			CheekRestType[2] = null;
+//			= ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor2.png"));
+			CheekRestType[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "CheekRest3.png"));
+			
+			
+			for (y = 0; y < 96; y++)
+			{
+				for (x = 0; x < 187; x++)
+				{
+					if (CheekRestType[1].getRGB(x, y) >= -500000)
+					{
+						CheekRestType[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			
+			for (y = 0; y < 98; y++)
+			{
+				for (x = 0; x < 192; x++)
+				{
+					if (CheekRestType[3].getRGB(x, y) >= -500000)
+					{
+						CheekRestType[3].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
 		    /*
 			RifleType[0] = null;
 			RifleType[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BUILD TEST - 1.png"));  
@@ -562,6 +626,8 @@ public class ImageTest extends Component
 			g.drawImage(Bipod[bipod], MyBipodLocationX, MyBipodLocationY, null);
 			g.drawImage(Monopod[monopod], MyMonopodLocationX, MyMonopodLocationY, null);
 			g.drawImage(ChassisColor[chassisColor], MyChassisColorLocationX, MyChassisColorLocationY, null);
+			g.drawImage(GripColor[gripColor], MyGripColorLocationX, MyGripColorLocationY, null);
+			g.drawImage(CheekRestType[cheekRestType], MyCheekRestTypeLocationx, MyCheekRestTypeLocationY, null);
 		}
 		else if (rifleType == 2)
 		{
