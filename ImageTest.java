@@ -17,20 +17,20 @@ public class ImageTest extends Component
 	public static final int MyRifleTypeLocationY = 0;
 	public static final int MyActionTypeLocationX = 0;
 	public static final int MyActionTypeLocationY = 0;
-	public static final int MyBarrelLenghtLocationX = 810;
-	public static final int MyBarrelLenghtLocationY = 280;
-	public static final int MyOpticsLocationX = 0;
-	public static final int MyOpticsLocationY = 268;
-	public static final int MyOpticMountLocationX = 0;
-	public static final int MyOpticMountLocationY = 402;
-	public static final int MyMagazineLocationX = 495;
-	public static final int MyMagazineLocationY = 370;
-	public static final int MyBipodLocationX = 0;
-	public static final int MyBipodLocationY = 669;
+	public static final int MyBarrelLenghtLocationX = 750;
+	public static final int MyBarrelLenghtLocationY = 200;
+	public static final int MyOpticsLocationX = 400;
+	public static final int MyOpticsLocationY = 110;
+	public static final int MyOpticMountLocationX = 470;
+	public static final int MyOpticMountLocationY = 180;
+	public static final int MyMagazineLocationX = 520;
+	public static final int MyMagazineLocationY = 250;
+	public static final int MyBipodLocationX = 200;
+	public static final int MyBipodLocationY = 400;
 	public static final int MyMonopodLocationX = 0;
-	public static final int MyMonopodLocationY = 800;
-	public static final int MyChassisColorLocationX = 500;
-	public static final int MyChassisColorLocationY = 0;
+	public static final int MyMonopodLocationY = 600;
+	public static final int MyChassisColorLocationX = 100;
+	public static final int MyChassisColorLocationY = 200;
 	public static final int MyGripColorLocationX = 500;
 	public static final int MyGripColorLocationY = 200;
 	public static final int MyCheekRestTypeLocationx = 0;
@@ -123,7 +123,220 @@ public class ImageTest extends Component
 		int y;
 		try
 		{  
-		    
+			
+			BarrelLenght[0] = null;
+			BarrelLenght[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BarrelType1.png"));  
+			BarrelLenght[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BarrelType2.png"));
+			BarrelLenght[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BarrelType3.png"));
+			
+			for (y = 0; y < 76; y++)
+			{
+				for (x = 0; x < 357; x++)
+				{
+					if (BarrelLenght[1].getRGB(x, y) >= -500000)
+					{
+						BarrelLenght[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 74; y++)
+			{
+				for (x = 0; x < 417; x++)
+				{
+					if (BarrelLenght[2].getRGB(x, y) >= -500000)
+					{
+						BarrelLenght[2].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 73; y++)
+			{
+				for (x = 0; x < 467; x++)
+				{
+					if (BarrelLenght[3].getRGB(x, y) >= -500000)
+					{
+						BarrelLenght[3].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			Magazine[0] = null;
+			Magazine[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "MagazineType1.png"));  
+			Magazine[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "MagazineType2.png"));
+			Magazine[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "MagazineType3.png"));
+			
+			for (y = 0; y < 71; y++)
+			{
+				for (x = 0; x < 90; x++)
+				{
+					if (Magazine[1].getRGB(x, y) >= -500000)
+					{
+						Magazine[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 94; y++)
+			{
+				for (x = 0; x < 91; x++)
+				{
+					if (Magazine[2].getRGB(x, y) >= -500000)
+					{
+						Magazine[2].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			System.out.println(Magazine[2].getRGB(1, 1));
+			System.out.println(Magazine[3].getRGB(1, 1));
+			for (y = 0; y < 129; y++)
+			{
+				for (x = 0; x < 94; x++)
+				{
+					if (Magazine[3].getRGB(x, y) >= -500000)
+					{
+						Magazine[3].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			System.out.println(Magazine[3].getRGB(1, 1));
+			
+			
+			Optics[0] = null;
+			Optics[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OpticsType1.png"));  
+			Optics[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OpticsType2.png"));
+			
+			
+			for (y = 0; y < 92; y++)
+			{
+				for (x = 0; x < 300; x++)
+				{
+					if (Optics[1].getRGB(x, y) >= -500000)
+					{
+						Optics[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 67; y++)
+			{
+				for (x = 0; x < 124; x++)
+				{
+					if (Optics[2].getRGB(x, y) >= -500000)
+					{
+						Optics[2].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			OpticMount[0] = null;
+			OpticMount[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OpticMount1.png"));  
+			OpticMount[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OpticMount2.png"));
+			OpticMount[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OpticMount3.png"));
+			OpticMount[4] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OpticMount4.png"));
+			OpticMount[5] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OpticMount5.png"));
+			
+			for (y = 0; y < 45; y++)
+			{
+				for (x = 0; x < 141; x++)
+				{
+					if (OpticMount[1].getRGB(x, y) >= -500000)
+					{
+						OpticMount[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 64; y++)
+			{
+				for (x = 0; x < 118; x++)
+				{
+					if (OpticMount[2].getRGB(x, y) >= -500000)
+					{
+						OpticMount[2].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			Bipod[0] = null;
+			Bipod[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BipodType1.png")); 
+			Bipod[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BipodType2.png"));
+			Bipod[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BipodType3.png"));
+			
+			
+			for (y = 0; y < 191; y++)
+			{
+				for (x = 0; x < 163; x++)
+				{
+					if (Bipod[1].getRGB(x, y) >= -500000)
+					{
+						Bipod[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 191; y++)
+			{
+				for (x = 0; x < 161; x++)
+				{
+					if (Bipod[2].getRGB(x, y) >= -500000)
+					{
+						Bipod[2].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 208; y++)
+			{
+				for (x = 0; x < 152; x++)
+				{
+					if (Bipod[3].getRGB(x, y) >= -500000)
+					{
+						Bipod[3].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			Monopod[0] = null;
+			Monopod[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "MonopodType1.png")); 
+			
+			for (y = 0; y < 163; y++)
+			{
+				for (x = 0; x < 69; x++)
+				{
+					if (Monopod[1].getRGB(x, y) >= -500000)
+					{
+						Monopod[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			ChassisColor[0] = null;
+			ChassisColor[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor1.png"));  
+			ChassisColor[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor2.png"));
+			ChassisColor[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor3.png"));
+			ChassisColor[4] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor4.png"));
+			ChassisColor[5] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor5.png"));
+			ChassisColor[6] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor6.png"));
+			ChassisColor[7] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor7.png"));
+			ChassisColor[8] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor8.png"));
+			ChassisColor[9] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor9.png"));
+			
+			for (y = 0; y < 154; y++)
+			{
+				for (x = 0; x < 740; x++)
+				{
+					if (ChassisColor[1].getRGB(x, y) >= -500000)
+					{
+						ChassisColor[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+		    /*
 			RifleType[0] = null;
 			RifleType[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BUILD TEST - 1.png"));  
 			RifleType[2] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "BUILD TEST - 2.png"));
@@ -142,6 +355,7 @@ public class ImageTest extends Component
 				}
 				
 			}
+			
 			Monopod[0] = null;
 			Monopod[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "MonopodType1.png"));  
 			
@@ -328,7 +542,7 @@ public class ImageTest extends Component
 					}
 				}
 				
-			}
+			}*/
 		} 
 		catch (IOException e)
 		{        
@@ -337,21 +551,27 @@ public class ImageTest extends Component
 	public void paint(Graphics g)
 	{         
 		
-		g.drawImage(RifleType[rifleType], MyRifleTypeLocationX, MyRifleTypeLocationY, null);
+		//g.drawImage(RifleType[rifleType], MyRifleTypeLocationX, MyRifleTypeLocationY, null);
 		if (rifleType == 1)
 		{
-			g.drawImage(Magazine[magazine], MyMagazineLocationX, MyMagazineLocationY, null);
+			
 			g.drawImage(BarrelLenght[barrelLenght], MyBarrelLenghtLocationX, MyBarrelLenghtLocationY, null);
+			g.drawImage(Magazine[magazine], MyMagazineLocationX, MyMagazineLocationY, null);
+			g.drawImage(Optics[optics], MyOpticsLocationX, MyOpticsLocationY, null);
+			g.drawImage(OpticMount[opticMount], MyOpticMountLocationX, MyOpticMountLocationY, null);
+			g.drawImage(Bipod[bipod], MyBipodLocationX, MyBipodLocationY, null);
+			g.drawImage(Monopod[monopod], MyMonopodLocationX, MyMonopodLocationY, null);
+			g.drawImage(ChassisColor[chassisColor], MyChassisColorLocationX, MyChassisColorLocationY, null);
 		}
 		else if (rifleType == 2)
 		{
-			g.drawImage(Magazine[magazine], MyMagazineLocationX, MyMagazineLocationY, null);
-			g.drawImage(BarrelLenght[barrelLenght], MyBarrelLenghtLocationX, MyBarrelLenghtLocationY, null);
+			//g.drawImage(Magazine[magazine], MyMagazineLocationX, MyMagazineLocationY, null);
+			//g.drawImage(BarrelLenght[barrelLenght], MyBarrelLenghtLocationX, MyBarrelLenghtLocationY, null);
 		}
 		else
 		{
-			g.drawImage(Magazine[magazine], MyMagazineLocationX, MyMagazineLocationY, null);
-			g.drawImage(BarrelLenght[barrelLenght], MyBarrelLenghtLocationX, MyBarrelLenghtLocationY, null);
+			//g.drawImage(Magazine[magazine], MyMagazineLocationX, MyMagazineLocationY, null);
+			//g.drawImage(BarrelLenght[barrelLenght], MyBarrelLenghtLocationX, MyBarrelLenghtLocationY, null);
 		}
 		/*
 		

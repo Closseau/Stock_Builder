@@ -762,7 +762,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(1);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 1;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -776,7 +776,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(2);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 2;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -790,7 +790,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(3);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 3;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -804,7 +804,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(4);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 4;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -818,7 +818,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(5);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 5;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -832,7 +832,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(6);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 6;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -846,7 +846,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(7);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 7;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -860,7 +860,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(8);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 8;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -874,7 +874,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(9);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 9;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -888,7 +888,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(10);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 10;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -902,7 +902,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(11);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 11;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -916,7 +916,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(12);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 12;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -930,7 +930,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(13);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 13;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -944,7 +944,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(14);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 14;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -958,7 +958,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(15);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 15;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -972,7 +972,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(16);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 16;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -986,7 +986,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(17);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 17;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1000,7 +1000,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(18);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 18;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1014,7 +1014,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(19);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 19;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1028,7 +1028,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(20);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 20;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1042,7 +1042,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(21);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 21;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1056,7 +1056,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(22);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 22;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1070,7 +1070,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(23);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 23;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1084,7 +1084,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setCheekRestType(24);
 			Menu.cheekRestTypeMenu.setForeground(new Color(100, 0, 0));
-			Menu.cheekRestType[5] = 0;
+			Menu.cheekRestType[5] = 24;
 			Menu.cheekRestTypeReminder.setText("GripColor: None");
 			Menu.cheekRestTypeCost = 0;
 			if (Menu.done[10] == false)
@@ -1112,7 +1112,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(1);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 1;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
@@ -1126,7 +1126,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(2);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 2;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
@@ -1140,7 +1140,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(3);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 3;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
@@ -1154,7 +1154,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(4);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 4;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
@@ -1168,7 +1168,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(5);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 5;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
@@ -1182,7 +1182,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(6);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 6;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
@@ -1196,7 +1196,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(7);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 7;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
@@ -1210,7 +1210,7 @@ public class ActionPreformer implements ActionListener
 			// sets the GripColor image to "GI Brown"
 			MyFrame.one.setButtPad(8);
 			Menu.buttPadMenu.setForeground(new Color(100, 0, 0));
-			Menu.buttPad[5] = 0;
+			Menu.buttPad[5] = 8;
 			Menu.buttPadReminder.setText("ButtPadSpacerColor: None");
 			Menu.buttPadCost = 0;
 			if (Menu.done[11] == false)
