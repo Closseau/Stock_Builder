@@ -33,18 +33,18 @@ public class ImageTest extends Component
 	public static final int MyChassisColorLocationY = 200;
 	public static final int MyGripColorLocationX = 0;
 	public static final int MyGripColorLocationY = 200;
-	public static final int MyCheekRestTypeLocationx = 0;
-	public static final int MyCheekRestTypeLocationY = 0;
-	public static final int MyButtPadLocationx = 0;
-	public static final int MyButtPadLocationY = 0;
-	public static final int MyButtSpacerLocationx = 0;
-	public static final int MyButtSpacerLocationY = 0;
-	public static final int MyPalmRestLocationx = 0;
-	public static final int MyPalmRestLocationY = 0;
-	public static final int MyOffHandRestLocationx = 0;
-	public static final int MyOffHandRestLocationY = 0;
-	public static final int MyHandGuardLocationx = 0;
-	public static final int MyHandGuardLocationY = 0;
+	public static final int MyCheekRestTypeLocationx = 600;
+	public static final int MyCheekRestTypeLocationY = 500;
+	public static final int MyButtPadLocationx = 800;
+	public static final int MyButtPadLocationY = 500;
+	public static final int MyButtSpacerLocationx = 400;
+	public static final int MyButtSpacerLocationY = 500;
+	public static final int MyPalmRestLocationx = 200;
+	public static final int MyPalmRestLocationY = 500;
+	public static final int MyOffHandRestLocationx = 300;
+	public static final int MyOffHandRestLocationY = 300;
+	public static final int MyHandGuardLocationx = 500;
+	public static final int MyHandGuardLocationY = 300;
 	public static final int MySlingPlateLocationx = 0;
 	public static final int MySlingPlateLocationY = 0;
 	public static final int MyFlushRailLocationx = 0;
@@ -101,12 +101,12 @@ public class ImageTest extends Component
 	BufferedImage[] Monopod = new BufferedImage[2];
 	BufferedImage[] ChassisColor = new BufferedImage[10];
 	BufferedImage[] GripColor = new BufferedImage[10];
-	BufferedImage[] CheekRestType = new BufferedImage[4];
-	BufferedImage[] ButtPad = new BufferedImage[4];
-	BufferedImage[] ButtSpacer = new BufferedImage[2];
-	BufferedImage[] PalmRest = new BufferedImage[10];
-	BufferedImage[] OffHandRest = new BufferedImage[10];
-	BufferedImage[] HandGuard = new BufferedImage[4];
+	BufferedImage[] CheekRestType = new BufferedImage[25];
+	BufferedImage[] ButtPad = new BufferedImage[9];
+	BufferedImage[] ButtSpacer = new BufferedImage[10];
+	BufferedImage[] PalmRest = new BufferedImage[9];
+	BufferedImage[] OffHandRest = new BufferedImage[2];
+	BufferedImage[] HandGuard = new BufferedImage[25];
 	BufferedImage[] SlingPlate = new BufferedImage[4];
 	BufferedImage[] FlushRail = new BufferedImage[2];
 	BufferedImage[] SideRailAdapters = new BufferedImage[10];
@@ -359,23 +359,33 @@ public class ImageTest extends Component
 				}
 			}
 			
-			/*
 			
-					BufferedImage[] CheekRestType = new BufferedImage[4];
-					BufferedImage[] ButtPad = new BufferedImage[4];
-					BufferedImage[] ButtSpacer = new BufferedImage[2];
-					BufferedImage[] PalmRest = new BufferedImage[10];
-					BufferedImage[] OffHandRest = new BufferedImage[10];
-					BufferedImage[] HandGuard = new BufferedImage[4];
-					BufferedImage[] SlingPlate = new BufferedImage[4];
-					BufferedImage[] FlushRail = new BufferedImage[2];
-			*/
 			CheekRestType[0] = null;
 			CheekRestType[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "CheekRest1.png"));  
-			CheekRestType[2] = null;
 //			= ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ChassisColor2.png"));
-			CheekRestType[3] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "CheekRest3.png"));
-			
+			CheekRestType[2] = null;
+			CheekRestType[3] = null;
+			CheekRestType[4] = null;
+			CheekRestType[5] = null;
+			CheekRestType[6] = null;
+			CheekRestType[7] = null;
+			CheekRestType[8] = null;
+			CheekRestType[9] = null;
+			CheekRestType[10] = null;
+			CheekRestType[11] = null;
+			CheekRestType[12] = null;
+			CheekRestType[13] = null;
+			CheekRestType[14] = null;
+			CheekRestType[15] = null;
+			CheekRestType[16] = null;
+			CheekRestType[17] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "CheekRest3.png"));
+			CheekRestType[18] = null;
+			CheekRestType[19] = null;
+			CheekRestType[20] = null;
+			CheekRestType[21] = null;
+			CheekRestType[22] = null;
+			CheekRestType[23] = null;
+			CheekRestType[24] = null;
 			
 			for (y = 0; y < 96; y++)
 			{
@@ -394,9 +404,163 @@ public class ImageTest extends Component
 			{
 				for (x = 0; x < 192; x++)
 				{
-					if (CheekRestType[3].getRGB(x, y) >= -500000)
+					if (CheekRestType[17].getRGB(x, y) >= -500000)
 					{
-						CheekRestType[3].setRGB(x, y, 0x00000000);
+						CheekRestType[17].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			ButtPad[0] = null;
+			ButtPad[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ButtPad1.png"));  
+			ButtPad[2] = null;
+			ButtPad[3] = null;
+			ButtPad[4] = null;
+			ButtPad[5] = null;
+			ButtPad[6] = null;
+			ButtPad[7] = null;
+			ButtPad[8] = null;
+			
+			
+			for (y = 0; y < 178; y++)
+			{
+				for (x = 0; x < 88; x++)
+				{
+					if (ButtPad[1].getRGB(x, y) >= -500000)
+					{
+						ButtPad[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			
+			
+			ButtSpacer[0] = null;
+			ButtSpacer[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "ButtSpacer1.png"));  
+			ButtSpacer[2] = null;
+			ButtSpacer[3] = null;
+			ButtSpacer[4] = null;
+			ButtSpacer[5] = null;
+			ButtSpacer[6] = null;
+			ButtSpacer[7] = null;
+			ButtSpacer[8] = null;
+			ButtSpacer[9] = null;
+			
+			
+			
+			for (y = 0; y < 159; y++)
+			{
+				for (x = 0; x < 60; x++)
+				{
+					if (ButtSpacer[1].getRGB(x, y) >= -500000)
+					{
+						ButtSpacer[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			
+			PalmRest[0] = null;
+			PalmRest[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "PalmRest1.png"));  
+			PalmRest[2] = null;
+			PalmRest[3] = null;
+			PalmRest[4] = null;
+			PalmRest[5] = null;
+			PalmRest[6] = null;
+			PalmRest[7] = null;
+			PalmRest[8] = null;
+			
+			
+			
+			
+			for (y = 0; y < 39; y++)
+			{
+				for (x = 0; x < 145; x++)
+				{
+					if (PalmRest[1].getRGB(x, y) >= -500000)
+					{
+						PalmRest[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			
+			OffHandRest[0] = null;
+			OffHandRest[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "OffHandRest1.png"));  
+			
+			
+			
+			for (y = 0; y < 50; y++)
+			{
+				for (x = 0; x < 137; x++)
+				{
+					if (OffHandRest[1].getRGB(x, y) >= -500000)
+					{
+						OffHandRest[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			
+			HandGuard[0] = null;
+			HandGuard[1] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "HandGuard1.png"));  
+			HandGuard[2] = null;
+			HandGuard[3] = null;
+			HandGuard[4] = null;
+			HandGuard[5] = null;
+			HandGuard[6] = null;
+			HandGuard[7] = null;
+			HandGuard[8] = null;
+			HandGuard[9] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "HandGuard2.png"));  
+			HandGuard[10] = null;
+			HandGuard[11] = null;
+			HandGuard[12] = null;
+			HandGuard[13] = null;
+			HandGuard[14] = null;
+			HandGuard[15] = null;
+			HandGuard[16] = null;
+			HandGuard[17] = ImageIO.read(new File(System.getProperty("user.dir") + "\\Images\\" + "HandGuard3.png"));  
+			HandGuard[18] = null;
+			HandGuard[19] = null;
+			HandGuard[20] = null;
+			HandGuard[21] = null;
+			HandGuard[22] = null;
+			HandGuard[23] = null;
+			HandGuard[24] = null;
+			
+			for (y = 0; y < 39; y++)
+			{
+				for (x = 0; x < 244; x++)
+				{
+					if (HandGuard[1].getRGB(x, y) >= -500000)
+					{
+						HandGuard[1].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 39; y++)
+			{
+				for (x = 0; x < 244; x++)
+				{
+					if (HandGuard[9].getRGB(x, y) >= -500000)
+					{
+						HandGuard[9].setRGB(x, y, 0x00000000);
+					}
+				}
+			}
+			
+			for (y = 0; y < 42; y++)
+			{
+				for (x = 0; x < 250; x++)
+				{
+					if (HandGuard[17].getRGB(x, y) >= -500000)
+					{
+						HandGuard[17].setRGB(x, y, 0x00000000);
 					}
 				}
 			}
@@ -628,6 +792,11 @@ public class ImageTest extends Component
 			g.drawImage(ChassisColor[chassisColor], MyChassisColorLocationX, MyChassisColorLocationY, null);
 			g.drawImage(GripColor[gripColor], MyGripColorLocationX, MyGripColorLocationY, null);
 			g.drawImage(CheekRestType[cheekRestType], MyCheekRestTypeLocationx, MyCheekRestTypeLocationY, null);
+			g.drawImage(ButtPad[buttPad], MyButtPadLocationx, MyButtPadLocationY, null);
+			g.drawImage(ButtSpacer[buttSpacer], MyButtSpacerLocationx, MyButtSpacerLocationY, null);
+			g.drawImage(PalmRest[palmRest], MyPalmRestLocationx, MyPalmRestLocationY, null);
+			g.drawImage(OffHandRest[offHandRest], MyOffHandRestLocationx, MyOffHandRestLocationY, null);
+			g.drawImage(HandGuard[handGuard], MyHandGuardLocationx, MyHandGuardLocationY, null);
 		}
 		else if (rifleType == 2)
 		{
